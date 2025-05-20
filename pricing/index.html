@@ -7,12 +7,12 @@
     <script
       type="module"
       crossorigin
-      src="https://vuongnq.github.io/om-landing/pricing/assets/index-CErhEmBb.js"
+      src="https://vuongnq.github.io/om-landing/pricing/assets/index-oNXaK30j.js"
     ></script>
     <link
       rel="stylesheet"
       crossorigin
-      href="https://vuongnq.github.io/om-landing/pricing/assets/index-DwHaMa93.css"
+      href="https://vuongnq.github.io/om-landing/pricing/assets/index-BcFWv4pn.css"
     />
   </head>
   <body>
@@ -1952,21 +1952,23 @@
         <!-- Collapse button -->
         <div
           id="collapse-button"
+          style="margin-bottom: 0px"
           class="collapse-button flex items-center justify-center gap-x-4 text-text-body cursor-pointer w-44 h-[62px] md:h-[72px] relative z-20 mb-[30px] md:mb-20"
         >
           <p class="font-medium tracking-[-0.24px] leading-[140%]">View all features</p>
+
           <svg
             id="collapse-icon"
-            width="25"
-            height="25"
-            viewBox="0 0 25 25"
-            fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            width="21"
+            height="20"
+            viewBox="0 0 21 20"
+            fill="none"
           >
             <path
-              d="M19.6191 15.3223L12.5614 8.26457L5.50366 15.3223"
-              stroke="currentColor"
-              stroke-width="3.02473"
+              d="M15.8957 7.5L10.0623 13.3333L4.229 7.5"
+              stroke="#BABABA"
+              stroke-width="2.5"
               stroke-linecap="round"
               stroke-linejoin="round"
             />
@@ -1976,6 +1978,7 @@
         <!-- Collapse header -->
         <div
           id="collapse-header"
+          style="max-height: 0px; opacity: 0; overflow: hidden; margin-bottom: 0px"
           class="text-center relative z-20 max-h-[200px] mb-[30px] md:mb-20 px-10"
         >
           <h2 class="heading-gradient text-3xl md:text-[36px] mb-4">Compare plans & features</h2>
@@ -1989,7 +1992,7 @@
 
         <div
           id="collapse-content"
-          style="max-height: 5000px; opacity: 1"
+          style="max-height: 0; opacity: 1; visibility: hidden"
           class="collapse-content hidden md:block max-w-[1292px] mx-auto rounded-[44px] border-[16px] overflow-hidden border-[rgba(255,254,254,0.08)] bg-background shadow-[0px_4px_44px_0px_rgba(0,0,0,0.25)]"
         >
           <div class="table-wrapper scrollbar-hidden w-screen max-w-full rounded-2xl">
@@ -3307,7 +3310,11 @@
             class="absolute w-[618px] h-[803px] rounded-[803px] bg-primary-900 blur-[222px] top-[75%] right-0 opacity-70"
           ></div>
         </div>
-        <div class="relative w-full block md:hidden">
+        <div
+          id="collapse-content-mobile"
+          style="max-height: 0px; opacity: 0; overflow: hidden"
+          class="relative w-full block md:hidden"
+        >
           <div
             class="w-full h-[50px] flex-shrink-0 rounded-[375px] bg-primary-550 blur-[91px] absolute z-10 top-[-20px] left-1/2 -translate-x-1/2"
           ></div>
@@ -4802,7 +4809,7 @@
 
       <!-- guarantee-info -->
 
-      <section class="section pt-[60px]">
+      <section class="section pt-0 md:pt-[60px]">
         <div class="flex gap-10 flex-wrap justify-center">
           <div
             class="flex min-w-[279px] flex-col items-center gap-y-3 p-[22px] rounded-2xl font-normal leading-[150%] tracking-[-0.22px]"
@@ -5107,16 +5114,18 @@
           </div>
           <p class="text-sm text-[#B7BBC2] max-w-[250px] md:max-w-full text-center">
             Don't find the answer? We can help,
-            <a href="mailto:support@onecommerce.io" class="text-primary-600"
+            <a href="mailto:support@onecommerce.io" class="text-primary-600 hover:underline"
               >click here to contact</a
             >
           </p>
         </div>
       </section>
       <!-- Review section -->
-      <section class="section pt-20 flex flex-col items-center gap-y-20 relative max-w-[1292px]">
+      <section
+        class="pricing-reviews section pt-20 flex flex-col items-center gap-y-20 relative max-w-[90%]"
+      >
         <h2
-          class="heading-gradient text-4xl font-medium leading-[140%] tracking-[-0.54px] max-w-[490px]"
+          class="heading-gradient text-2xl md:text-4xl font-medium leading-[140%] tracking-[-0.54px] max-w-[490px] text-center"
         >
           Trusted by <span class="text-reset text-primary-550">5k+</span> world-class companies &
           organizations
@@ -5127,7 +5136,7 @@
             <div class="group">
               <div class="card">
                 <div
-                  class="flex flex-col items-start w-[416px] min-h-[382px] p-6 gap-[23px] rounded-[20px] bg-[rgba(123,123,123,0.35)] shadow-[inset_0px_0px_22px_0px_rgba(225,187,187,0.25)]"
+                  class="flex flex-col items-start w-[330px] md:w-[416px] min-h-[350px] md:min-h-[382px] p-6 gap-[23px] rounded-[20px] bg-[rgba(123,123,123,0.35)] shadow-[inset_0px_0px_22px_0px_rgba(225,187,187,0.25)]"
                 >
                   <div class="flex">
                     <img src="https://vuongnq.github.io/om-landing/pricing/assets/star-filled-7T-JPUM_.svg" alt="star-filled" />
@@ -5136,7 +5145,9 @@
                     <img src="https://vuongnq.github.io/om-landing/pricing/assets/star-filled-7T-JPUM_.svg" alt="star-filled" />
                     <img src="https://vuongnq.github.io/om-landing/pricing/assets/star-filled-7T-JPUM_.svg" alt="star-filled" />
                   </div>
-                  <p class="text-white text-[18px] font-light leading-[170%] tracking-[-0.3px]">
+                  <p
+                    class="text-white text-[16px] md:text-[18px] font-light leading-[170%] tracking-[-0.3px]"
+                  >
                     “The OneMobile team and CS Dura helped guide me through the entire process to be
                     sure I had everything to build a successful and complete app.”
                   </p>
@@ -5145,16 +5156,16 @@
                     <img
                       src="https://vuongnq.github.io/om-landing/pricing/assets/person-1-nsH9MwNY.png"
                       alt="person-1"
-                      class="w-[60px] h-[60px] rounded-full"
+                      class="w-10 h-10 md:w-[60px] md:h-[60px] rounded-full"
                     />
                     <div>
                       <p
-                        class="text-white text-[18px] font-semibold leading-[170%] tracking-[-0.3px]"
+                        class="text-white text-[14px] md:text-[18px] font-semibold leading-[170%] tracking-[-0.3px]"
                       >
                         Robert Jew
                       </p>
                       <span
-                        class="text-white/50 font-medium text-base leading-[160%] tracking-[-0.3px] font-tertiary"
+                        class="text-white/50 font-medium text-[12px] md:text-base leading-[160%] tracking-[-0.3px] font-tertiary"
                         >Co-Founder of Jett</span
                       >
                     </div>
@@ -5163,7 +5174,7 @@
               </div>
               <div class="card">
                 <div
-                  class="flex flex-col items-start w-[416px] min-h-[382px] p-6 gap-[23px] rounded-[20px] bg-[rgba(123,123,123,0.35)] shadow-[inset_0px_0px_22px_0px_rgba(225,187,187,0.25)]"
+                  class="flex flex-col items-start w-[330px] md:w-[416px] min-h-[350px] md:min-h-[382px] p-6 gap-[23px] rounded-[20px] bg-[rgba(123,123,123,0.35)] shadow-[inset_0px_0px_22px_0px_rgba(225,187,187,0.25)]"
                 >
                   <div class="flex">
                     <img src="https://vuongnq.github.io/om-landing/pricing/assets/star-filled-7T-JPUM_.svg" alt="star-filled" />
@@ -5172,7 +5183,9 @@
                     <img src="https://vuongnq.github.io/om-landing/pricing/assets/star-filled-7T-JPUM_.svg" alt="star-filled" />
                     <img src="https://vuongnq.github.io/om-landing/pricing/assets/star-filled-7T-JPUM_.svg" alt="star-filled" />
                   </div>
-                  <p class="text-white text-[18px] font-light leading-[170%] tracking-[-0.3px]">
+                  <p
+                    class="text-white text-[16px] md:text-[18px] font-light leading-[170%] tracking-[-0.3px]"
+                  >
                     “I recently used a mobile app builder service, and I couldn't be happier with
                     the results! The platform made it incredibly easy for me to create a
                     professional and functional mobile app without any coding skills”
@@ -5182,16 +5195,16 @@
                     <img
                       src="https://vuongnq.github.io/om-landing/pricing/assets/person-2-BKBvaKv5.png"
                       alt="person-2"
-                      class="w-[60px] h-[60px] rounded-full"
+                      class="w-10 h-10 md:w-[60px] md:h-[60px] rounded-full"
                     />
                     <div>
                       <p
-                        class="text-white text-[18px] font-semibold leading-[170%] tracking-[-0.3px]"
+                        class="text-white text-[14px] md:text-[18px] font-semibold leading-[170%] tracking-[-0.3px]"
                       >
                         RPETGS
                       </p>
                       <span
-                        class="text-white/50 font-medium text-base leading-[160%] tracking-[-0.3px] font-tertiary"
+                        class="text-white/50 font-medium text-[12px] md:text-base leading-[160%] tracking-[-0.3px] font-tertiary"
                         >Pet store in the U.S</span
                       >
                     </div>
@@ -5200,7 +5213,7 @@
               </div>
               <div class="card">
                 <div
-                  class="flex flex-col items-start w-[416px] min-h-[382px] p-6 gap-[23px] rounded-[20px] bg-[rgba(123,123,123,0.35)] shadow-[inset_0px_0px_22px_0px_rgba(225,187,187,0.25)]"
+                  class="flex flex-col items-start w-[330px] md:w-[416px] min-h-[350px] md:min-h-[382px] p-6 gap-[23px] rounded-[20px] bg-[rgba(123,123,123,0.35)] shadow-[inset_0px_0px_22px_0px_rgba(225,187,187,0.25)]"
                 >
                   <div class="flex">
                     <img src="https://vuongnq.github.io/om-landing/pricing/assets/star-filled-7T-JPUM_.svg" alt="star-filled" />
@@ -5209,7 +5222,9 @@
                     <img src="https://vuongnq.github.io/om-landing/pricing/assets/star-filled-7T-JPUM_.svg" alt="star-filled" />
                     <img src="https://vuongnq.github.io/om-landing/pricing/assets/star-filled-7T-JPUM_.svg" alt="star-filled" />
                   </div>
-                  <p class="text-white text-[18px] font-light leading-[170%] tracking-[-0.3px]">
+                  <p
+                    class="text-white text-[16px] md:text-[18px] font-light leading-[170%] tracking-[-0.3px]"
+                  >
                     "The smallest paid plan is affordable for growing businesses and still gives you
                     an incredibly customizable app experience for your customer."
                   </p>
@@ -5218,16 +5233,16 @@
                     <img
                       src="https://vuongnq.github.io/om-landing/pricing/assets/person-3-DcVfU1-J.png"
                       alt="person-3"
-                      class="w-[60px] h-[60px] rounded-full"
+                      class="w-10 h-10 md:w-[60px] md:h-[60px] rounded-full"
                     />
                     <div>
                       <p
-                        class="text-white text-[18px] font-semibold leading-[170%] tracking-[-0.3px]"
+                        class="text-white text-[14px] md:text-[18px] font-semibold leading-[170%] tracking-[-0.3px]"
                       >
                         No Standing NYC
                       </p>
                       <span
-                        class="text-white/50 font-medium text-base leading-[160%] tracking-[-0.3px] font-tertiary"
+                        class="text-white/50 font-medium text-[12px] md:text-base leading-[160%] tracking-[-0.3px] font-tertiary"
                         >United States</span
                       >
                     </div>
@@ -5236,7 +5251,7 @@
               </div>
               <div class="card">
                 <div
-                  class="flex flex-col items-start w-[416px] min-h-[382px] p-6 gap-[23px] rounded-[20px] bg-[rgba(123,123,123,0.35)] shadow-[inset_0px_0px_22px_0px_rgba(225,187,187,0.25)]"
+                  class="flex flex-col items-start w-[330px] md:w-[416px] min-h-[350px] md:min-h-[382px] p-6 gap-[23px] rounded-[20px] bg-[rgba(123,123,123,0.35)] shadow-[inset_0px_0px_22px_0px_rgba(225,187,187,0.25)]"
                 >
                   <div class="flex">
                     <img src="https://vuongnq.github.io/om-landing/pricing/assets/star-filled-7T-JPUM_.svg" alt="star-filled" />
@@ -5245,7 +5260,9 @@
                     <img src="https://vuongnq.github.io/om-landing/pricing/assets/star-filled-7T-JPUM_.svg" alt="star-filled" />
                     <img src="https://vuongnq.github.io/om-landing/pricing/assets/star-filled-7T-JPUM_.svg" alt="star-filled" />
                   </div>
-                  <p class="text-white text-[18px] font-light leading-[170%] tracking-[-0.3px]">
+                  <p
+                    class="text-white text-[16px] md:text-[18px] font-light leading-[170%] tracking-[-0.3px]"
+                  >
                     “Really appreciate how the team is dedicated towards customers success and
                     helping store owners build their app in the easiest. “
                   </p>
@@ -5254,16 +5271,16 @@
                     <img
                       src="https://vuongnq.github.io/om-landing/pricing/assets/person-4-BgAoLnYq.png"
                       alt="person-4"
-                      class="w-[60px] h-[60px] rounded-full"
+                      class="w-10 h-10 md:w-[60px] md:h-[60px] rounded-full"
                     />
                     <div>
                       <p
-                        class="text-white text-[18px] font-semibold leading-[170%] tracking-[-0.3px]"
+                        class="text-white text-[14px] md:text-[18px] font-semibold leading-[170%] tracking-[-0.3px]"
                       >
                         kharpan
                       </p>
                       <span
-                        class="text-white/50 font-medium text-base leading-[160%] tracking-[-0.3px] font-tertiary"
+                        class="text-white/50 font-medium text-[12px] md:text-base leading-[160%] tracking-[-0.3px] font-tertiary"
                         >F&B store in Nepal</span
                       >
                     </div>
@@ -5275,7 +5292,7 @@
             <div aria-hidden class="group">
               <div class="card">
                 <div
-                  class="flex flex-col items-start w-[416px] min-h-[382px] p-6 gap-[23px] rounded-[20px] bg-[rgba(123,123,123,0.35)] shadow-[inset_0px_0px_22px_0px_rgba(225,187,187,0.25)]"
+                  class="flex flex-col items-start w-[330px] md:w-[416px] min-h-[350px] md:min-h-[382px] p-6 gap-[23px] rounded-[20px] bg-[rgba(123,123,123,0.35)] shadow-[inset_0px_0px_22px_0px_rgba(225,187,187,0.25)]"
                 >
                   <div class="flex">
                     <img src="https://vuongnq.github.io/om-landing/pricing/assets/star-filled-7T-JPUM_.svg" alt="star-filled" />
@@ -5284,7 +5301,9 @@
                     <img src="https://vuongnq.github.io/om-landing/pricing/assets/star-filled-7T-JPUM_.svg" alt="star-filled" />
                     <img src="https://vuongnq.github.io/om-landing/pricing/assets/star-filled-7T-JPUM_.svg" alt="star-filled" />
                   </div>
-                  <p class="text-white text-[18px] font-light leading-[170%] tracking-[-0.3px]">
+                  <p
+                    class="text-white text-[16px] md:text-[18px] font-light leading-[170%] tracking-[-0.3px]"
+                  >
                     “The OneMobile team and CS Dura helped guide me through the entire process to be
                     sure I had everything to build a successful and complete app.”
                   </p>
@@ -5293,16 +5312,16 @@
                     <img
                       src="https://vuongnq.github.io/om-landing/pricing/assets/person-1-nsH9MwNY.png"
                       alt="person-1"
-                      class="w-[60px] h-[60px] rounded-full"
+                      class="w-10 h-10 md:w-[60px] md:h-[60px] rounded-full"
                     />
                     <div>
                       <p
-                        class="text-white text-[18px] font-semibold leading-[170%] tracking-[-0.3px]"
+                        class="text-white text-[14px] md:text-[18px] font-semibold leading-[170%] tracking-[-0.3px]"
                       >
                         Robert Jew
                       </p>
                       <span
-                        class="text-white/50 font-medium text-base leading-[160%] tracking-[-0.3px] font-tertiary"
+                        class="text-white/50 font-medium text-[12px] md:text-base leading-[160%] tracking-[-0.3px] font-tertiary"
                         >Co-Founder of Jett</span
                       >
                     </div>
@@ -5311,7 +5330,7 @@
               </div>
               <div class="card">
                 <div
-                  class="flex flex-col items-start w-[416px] min-h-[382px] p-6 gap-[23px] rounded-[20px] bg-[rgba(123,123,123,0.35)] shadow-[inset_0px_0px_22px_0px_rgba(225,187,187,0.25)]"
+                  class="flex flex-col items-start w-[330px] md:w-[416px] min-h-[350px] md:min-h-[382px] p-6 gap-[23px] rounded-[20px] bg-[rgba(123,123,123,0.35)] shadow-[inset_0px_0px_22px_0px_rgba(225,187,187,0.25)]"
                 >
                   <div class="flex">
                     <img src="https://vuongnq.github.io/om-landing/pricing/assets/star-filled-7T-JPUM_.svg" alt="star-filled" />
@@ -5320,7 +5339,9 @@
                     <img src="https://vuongnq.github.io/om-landing/pricing/assets/star-filled-7T-JPUM_.svg" alt="star-filled" />
                     <img src="https://vuongnq.github.io/om-landing/pricing/assets/star-filled-7T-JPUM_.svg" alt="star-filled" />
                   </div>
-                  <p class="text-white text-[18px] font-light leading-[170%] tracking-[-0.3px]">
+                  <p
+                    class="text-white text-[16px] md:text-[18px] font-light leading-[170%] tracking-[-0.3px]"
+                  >
                     “I recently used a mobile app builder service, and I couldn't be happier with
                     the results! The platform made it incredibly easy for me to create a
                     professional and functional mobile app without any coding skills”
@@ -5330,16 +5351,16 @@
                     <img
                       src="https://vuongnq.github.io/om-landing/pricing/assets/person-2-BKBvaKv5.png"
                       alt="person-2"
-                      class="w-[60px] h-[60px] rounded-full"
+                      class="w-10 h-10 md:w-[60px] md:h-[60px] rounded-full"
                     />
                     <div>
                       <p
-                        class="text-white text-[18px] font-semibold leading-[170%] tracking-[-0.3px]"
+                        class="text-white text-[14px] md:text-[18px] font-semibold leading-[170%] tracking-[-0.3px]"
                       >
                         RPETGS
                       </p>
                       <span
-                        class="text-white/50 font-medium text-base leading-[160%] tracking-[-0.3px] font-tertiary"
+                        class="text-white/50 font-medium text-[12px] md:text-base leading-[160%] tracking-[-0.3px] font-tertiary"
                         >Pet store in the U.S</span
                       >
                     </div>
@@ -5348,7 +5369,7 @@
               </div>
               <div class="card">
                 <div
-                  class="flex flex-col items-start w-[416px] min-h-[382px] p-6 gap-[23px] rounded-[20px] bg-[rgba(123,123,123,0.35)] shadow-[inset_0px_0px_22px_0px_rgba(225,187,187,0.25)]"
+                  class="flex flex-col items-start w-[330px] md:w-[416px] min-h-[350px] md:min-h-[382px] p-6 gap-[23px] rounded-[20px] bg-[rgba(123,123,123,0.35)] shadow-[inset_0px_0px_22px_0px_rgba(225,187,187,0.25)]"
                 >
                   <div class="flex">
                     <img src="https://vuongnq.github.io/om-landing/pricing/assets/star-filled-7T-JPUM_.svg" alt="star-filled" />
@@ -5357,7 +5378,9 @@
                     <img src="https://vuongnq.github.io/om-landing/pricing/assets/star-filled-7T-JPUM_.svg" alt="star-filled" />
                     <img src="https://vuongnq.github.io/om-landing/pricing/assets/star-filled-7T-JPUM_.svg" alt="star-filled" />
                   </div>
-                  <p class="text-white text-[18px] font-light leading-[170%] tracking-[-0.3px]">
+                  <p
+                    class="text-white text-[16px] md:text-[18px] font-light leading-[170%] tracking-[-0.3px]"
+                  >
                     "The smallest paid plan is affordable for growing businesses and still gives you
                     an incredibly customizable app experience for your customer."
                   </p>
@@ -5366,16 +5389,16 @@
                     <img
                       src="https://vuongnq.github.io/om-landing/pricing/assets/person-3-DcVfU1-J.png"
                       alt="person-3"
-                      class="w-[60px] h-[60px] rounded-full"
+                      class="w-10 h-10 md:w-[60px] md:h-[60px] rounded-full"
                     />
                     <div>
                       <p
-                        class="text-white text-[18px] font-semibold leading-[170%] tracking-[-0.3px]"
+                        class="text-white text-[14px] md:text-[18px] font-semibold leading-[170%] tracking-[-0.3px]"
                       >
                         No Standing NYC
                       </p>
                       <span
-                        class="text-white/50 font-medium text-base leading-[160%] tracking-[-0.3px] font-tertiary"
+                        class="text-white/50 font-medium text-[12px] md:text-base leading-[160%] tracking-[-0.3px] font-tertiary"
                         >United States</span
                       >
                     </div>
@@ -5384,7 +5407,7 @@
               </div>
               <div class="card">
                 <div
-                  class="flex flex-col items-start w-[416px] min-h-[382px] p-6 gap-[23px] rounded-[20px] bg-[rgba(123,123,123,0.35)] shadow-[inset_0px_0px_22px_0px_rgba(225,187,187,0.25)]"
+                  class="flex flex-col items-start w-[330px] md:w-[416px] min-h-[350px] md:min-h-[382px] p-6 gap-[23px] rounded-[20px] bg-[rgba(123,123,123,0.35)] shadow-[inset_0px_0px_22px_0px_rgba(225,187,187,0.25)]"
                 >
                   <div class="flex">
                     <img src="https://vuongnq.github.io/om-landing/pricing/assets/star-filled-7T-JPUM_.svg" alt="star-filled" />
@@ -5393,7 +5416,9 @@
                     <img src="https://vuongnq.github.io/om-landing/pricing/assets/star-filled-7T-JPUM_.svg" alt="star-filled" />
                     <img src="https://vuongnq.github.io/om-landing/pricing/assets/star-filled-7T-JPUM_.svg" alt="star-filled" />
                   </div>
-                  <p class="text-white text-[18px] font-light leading-[170%] tracking-[-0.3px]">
+                  <p
+                    class="text-white text-[16px] md:text-[18px] font-light leading-[170%] tracking-[-0.3px]"
+                  >
                     “Really appreciate how the team is dedicated towards customers success and
                     helping store owners build their app in the easiest. “
                   </p>
@@ -5402,16 +5427,16 @@
                     <img
                       src="https://vuongnq.github.io/om-landing/pricing/assets/person-4-BgAoLnYq.png"
                       alt="person-4"
-                      class="w-[60px] h-[60px] rounded-full"
+                      class="w-10 h-10 md:w-[60px] md:h-[60px] rounded-full"
                     />
                     <div>
                       <p
-                        class="text-white text-[18px] font-semibold leading-[170%] tracking-[-0.3px]"
+                        class="text-white text-[14px] md:text-[18px] font-semibold leading-[170%] tracking-[-0.3px]"
                       >
                         kharpan
                       </p>
                       <span
-                        class="text-white/50 font-medium text-base leading-[160%] tracking-[-0.3px] font-tertiary"
+                        class="text-white/50 font-medium text-[12px] md:text-base leading-[160%] tracking-[-0.3px] font-tertiary"
                         >F&B store in Nepal</span
                       >
                     </div>
@@ -5421,20 +5446,20 @@
             </div>
 
             <div
-              class="absolute top-0 left-0 w-[220px] h-full flex-shrink-0 bg-[linear-gradient(90deg,#080808_0%,rgba(8,8,8,0.00)_100%)]"
+              class="absolute top-0 left-0 w-[50px] md:w-[220px] h-full flex-shrink-0 bg-[linear-gradient(90deg,#080808_0%,rgba(8,8,8,0.00)_100%)]"
             ></div>
 
             <div
-              class="absolute top-0 right-0 w-[220px] h-full flex-shrink-0 bg-[linear-gradient(270deg,#080808_0%,rgba(8,8,8,0.00)_100%)]"
+              class="absolute top-0 right-0 w-[50px] md:w-[220px] h-full flex-shrink-0 bg-[linear-gradient(270deg,#080808_0%,rgba(8,8,8,0.00)_100%)]"
             ></div>
           </div>
           <button
-            class="absolute prev top-1/2 -translate-y-1/2 -left-1/20 z-10 cursor-pointer hover:opacity-90"
+            class="absolute prev top-1/2 -translate-y-1/2 -left-[30px] z-10 cursor-pointer hover:opacity-90 hidden md:block"
           >
             <img src="https://vuongnq.github.io/om-landing/pricing/assets/chevron-left-6tyqsno9.svg" alt="arrow-left" />
           </button>
           <button
-            class="absolute next top-1/2 -translate-y-1/2 -right-1/20 z-10 cursor-pointer hover:opacity-90"
+            class="absolute next top-1/2 -translate-y-1/2 -right-[30px] z-10 cursor-pointer hover:opacity-90 hidden md:block"
           >
             <img src="https://vuongnq.github.io/om-landing/pricing/assets/chevron-right-hq2Qs4lO.svg" alt="arrow-right" />
           </button>
