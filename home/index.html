@@ -3,16 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+    />
+
     <title>OM Landing</title>
     <script
       type="module"
       crossorigin
-      src="https://vuongnq.github.io/om-landing/home/assets/index-y0rHWEDH.js"
+      src="https://vuongnq.github.io/om-landing/home/assets/index-B1ABvrqJ.js"
     ></script>
     <link
       rel="stylesheet"
       crossorigin
-      href="https://vuongnq.github.io/om-landing/home/assets/index-DdHDHzgC.css"
+      href="https://vuongnq.github.io/om-landing/home/assets/index-DlEJz1st.css"
     />
   </head>
   <body>
@@ -23,8 +30,8 @@
         <!-- Logo Section -->
         <div class="menu-logo">
           <a href="/" aria-label="OneMobile.ai">
-            <img src="https://vuongnq.github.io/om-landing/home/assets/logo-mobile-dpbpdgSk.svg" alt="OneMobile Logo" class="logo-mobile" />
-            <img src="https://vuongnq.github.io/om-landing/home/assets/logo-Di6n7y7R.svg" alt="OneMobile Logo" class="logo-desktop" />
+            <img src="https://vuongnq.github.io/om-landing/home/assets/logo-mobile-Db_OdIZI.svg" alt="OneMobile Logo" class="logo-mobile" />
+            <img src="https://vuongnq.github.io/om-landing/home/assets/logo-Bf5lIJUR.svg" alt="OneMobile Logo" class="logo-desktop" />
           </a>
         </div>
 
@@ -38,14 +45,14 @@
             <button aria-expanded="false" aria-haspopup="true" id="explore-dropdown-button">
               <span class="hidden md:inline">Explore</span>
               <img
-                src="https://vuongnq.github.io/om-landing/home/assets/chevron-down-zJlhbYwX.svg"
+                src="https://vuongnq.github.io/om-landing/home/assets/chevron-down-CEJ2IYhI.svg"
                 alt=""
                 id="explore-dropdown-icon"
                 class="hidden md:inline ml-1"
               />
               <!-- Mobile: Menu Icon -->
               <img
-                src="https://vuongnq.github.io/om-landing/home/assets/icon-menu-C1pUmUac.svg"
+                src="https://vuongnq.github.io/om-landing/home/assets/icon-menu-tCesTpt5.svg"
                 alt="Menu"
                 class="block cursor-pointer md:hidden"
                 id="mobile-menu-icon"
@@ -360,7 +367,7 @@
         <!-- Mobile Menu Header -->
         <div class="mobile-menu-header">
           <div class="mobile-menu-logo">
-            <img src="https://vuongnq.github.io/om-landing/home/assets/logo-mobile-dpbpdgSk.svg" alt="OneMobile Logo" />
+            <img src="https://vuongnq.github.io/om-landing/home/assets/logo-mobile-Db_OdIZI.svg" alt="OneMobile Logo" />
           </div>
           <button id="mobile-menu-close" class="mobile-menu-close" aria-label="Close menu">
             <svg
@@ -705,27 +712,31 @@
 
     <main>
       <div class="w-full">
-        <div class="pt-30 section-app-highlight-container">
+        <div class="lg:pt-30 pt-20 section-app-highlight-container">
           <div
-            class="flex flex-col gap-2 items-center gap-[10px] pb-20 section-app-highlight-title"
+            class="flex flex-col gap-2 items-center gap-[10px] lg:pb-20 pb-[29px] section-app-highlight-title"
           >
             <div class="flex flex-col items-center">
-              <div class="flex gap-3 items-center">
+              <div class="flex lg:gap-3 items-center">
                 <span
-                  class="text-primary-900 min-w-[200px] text-right highlight-title animate__animated animate__slideInUp"
+                  class="text-primary-900 lg:min-w-[200px] min-w-[120px] lg:text-right highlight-title animate__animated"
                 >
                   GROW
                 </span>
-                <h1 class="heading-gradient">A THRIVING BUSINESS WITH</h1>
+                <h1 class="heading-gradient lg:block hidden">A THRIVING BUSINESS WITH</h1>
+                <h1 class="heading-gradient lg:hidden block">A THRIVING</h1>
               </div>
+              <h1 class="heading-gradient lg:hidden block">BUSINESS WITH</h1>
 
-              <h1 class="heading-gradient">#1 SHOPIFY MOBILE APP BUILDER</h1>
+              <h1 class="heading-gradient lg:block hidden">#1 SHOPIFY MOBILE APP BUILDER</h1>
+              <h1 class="heading-gradient lg:hidden block">#1 SHOPIFY MOBILE</h1>
+              <h1 class="heading-gradient lg:hidden block">APP BUILDER</h1>
             </div>
-            <p class="text-text-body px-3 py-2">
+            <p class="text-text-body px-3 py-2 lg:block hidden">
               We enable brands to easily build standout mobile apps and turn them into effective
               sales channels.
             </p>
-            <div class="text-center pt-5 pb-4">
+            <div class="text-center pt-5 pb-4 lg:block hidden">
               <button
                 class="btn-primary px-[28px] py-[22px] flex items-center gap-2 button-start-free hover:text-primary-900"
               >
@@ -751,11 +762,11 @@
           </div>
 
           <div
-            class="show-off-app-preview md:min-h-screen overflow-hidden flex flex-col gap-2 items-center justify-center relative"
+            class="show-off-app-preview min-h-screen overflow-hidden flex flex-col gap-2 items-center justify-center relative"
           >
             <!-- Overlay -->
             <div
-              class="overlay4 absolute top-0 left-1/2 -translate-x-1/2 h-full section-app-highlight-overlay"
+              class="overlay4 absolute top-0 left-1/2 -translate-x-1/2 h-full lg:block hidden section-app-highlight-overlay"
             >
               <div class="overlay3 absolute top-[46px] left-1/2 -translate-x-1/2 h-full">
                 <div class="overlay2 absolute top-[46px] left-1/2 -translate-x-1/2 h-full">
@@ -773,7 +784,7 @@
                 <img
                   src="https://vuongnq.github.io/om-landing/home/assets/layout-mobile-lcR3fUGM.png"
                   alt="Mobile Layout"
-                  class="absolute z-20 w-[340px] sm:w-[400px] lg:w-[430px] rounded-[40px] shadow-2xl layout-mobile-image"
+                  class="absolute left-1/2 -translate-x-1/2 z-20 lg:w-[430px] w-[80%] rounded-[40px] shadow-2xl layout-mobile-image"
                 />
                 <div
                   class="absolute left-1/2 -translate-x-1/2 z-10 overflow-hidden app-preview-mobile-layout-overlay fixTop"
@@ -783,7 +794,7 @@
                     muted
                     loop
                     poster="https://vuongnq.github.io/om-landing/home/assets/display-CTWC7wBM.png"
-                    class="h-[840px] object-cover"
+                    class="lg:h-[840px] h-auto object-cover"
                   >
                     <source
                       src="https://cdn.shopify.com/videos/c/o/v/2773fcb8fdfa45e0b9711a615fe73f1f.mp4"
@@ -797,19 +808,22 @@
                 </div>
 
                 <div
-                  class="absolute -left-[50px] -translate-x-[100%] top-[170px] flex flex-col gap-2 items-start section-app-highlight-feature-left"
+                  data-link="section-zero-code"
+                  class="cursor-pointer absolute -left-[50px] -translate-x-[100%] top-[170px] flex flex-col gap-2 items-start section-app-highlight-feature-left animate__animated"
                 >
                   <p>ZERO code</p>
                   <p>build & launch</p>
                 </div>
                 <div
-                  class="absolute -right-[22px] translate-x-[100%] top-[170px] flex flex-col gap-2 items-start section-app-highlight-feature-right"
+                  data-link="section-quick-scale"
+                  class="cursor-pointer absolute -right-[22px] translate-x-[100%] top-[170px] flex flex-col gap-2 items-start section-app-highlight-feature-right animate__animated"
                 >
                   <p>Quickly scale</p>
                   <p>customer base</p>
                 </div>
                 <div
-                  class="absolute -right-[51px] translate-x-[100%] bottom-[187px] flex flex-col gap-2 items-start section-app-highlight-feature-right"
+                  data-link="section-effectively"
+                  class="cursor-pointer absolute -right-[51px] translate-x-[100%] bottom-[187px] flex flex-col gap-2 items-start section-app-highlight-feature-right animate__animated"
                 >
                   <p>Effectively</p>
                   <p>engage & convert</p>
@@ -823,7 +837,7 @@
           <div class="px-10 relative flex flex-col gap-0 md:gap-[80px]">
             <!-- Main Content: 3 Sections -->
             <section
-              id="section-1"
+              id="section-zero-code"
               class="flex justify-center items-center w-full min-h-auto lg:min-h-[700px] flex-col lg:flex-row transition-all duration-500"
             >
               <div class="flex flex-col lg:flex-row w-full h-full justify-between items-center">
@@ -858,7 +872,7 @@
               </div>
             </section>
             <section
-              id="section-2"
+              id="section-quick-scale"
               class="flex justify-center items-center w-full min-h-auto lg:min-h-[700px] flex-col lg:flex-row transition-all duration-500"
             >
               <div class="flex flex-col lg:flex-row w-full h-full justify-between items-center">
@@ -893,7 +907,7 @@
               </div>
             </section>
             <section
-              id="section-3"
+              id="section-effectively"
               class="flex justify-center items-center w-full min-h-auto lg:min-h-[700px] flex-col lg:flex-row transition-all duration-500"
             >
               <div class="flex flex-col lg:flex-row w-full h-full justify-between items-center">
@@ -1106,7 +1120,7 @@
                   class="section-feels-this-good__step-icon z-2 rounded-[6px] md:rounded-xl flex items-center justify-center"
                 >
                   <!-- Merchant logo SVG/icon -->
-                  <img src="https://vuongnq.github.io/om-landing/home/assets/icon-step-make-purchase-C1tEIWOZ.svg" alt="Discover icon" />
+                  <img src="https://vuongnq.github.io/om-landing/home/assets/icon-step-make-purchase-Bikvia_h.svg" alt="Discover icon" />
                 </div>
                 <div class="z-2 flex-1 flex flex-col">
                   <div class="flex items-center gap-1">
@@ -1118,7 +1132,7 @@
                       </h3>
                     </div>
                     <img
-                      src="https://vuongnq.github.io/om-landing/home/assets/chevron-down-zJlhbYwX.svg"
+                      src="https://vuongnq.github.io/om-landing/home/assets/chevron-down-CEJ2IYhI.svg"
                       alt="explore-dropdown-icon"
                       class="section-feels-this-good__step-icon-chevron md:hidden"
                     />
@@ -1309,7 +1323,7 @@
               <!-- Start with industry-specific app themes  -->
               <div class="w-full flex flex-col gap-5">
                 <div class="flex gap-[10px] items-center section w-full">
-                  <img src="https://vuongnq.github.io/om-landing/home/assets/icon-app-design-poin-check-feature-CFoI-IJL.svg" alt="" />
+                  <img src="https://vuongnq.github.io/om-landing/home/assets/icon-app-design-poin-check-feature-DXWVIeYe.svg" alt="" />
                   <h4
                     id="app-themes-title"
                     class="flex-1 text-base md:text-[22px] font-medium bg-gradient-to-b from-white to-[#7C7C7C] bg-clip-text text-transparent"
@@ -1443,7 +1457,7 @@
               <!-- Customize to sell in your own terms -->
               <div class="w-full px-4 md:px-40 flex flex-col gap-5">
                 <div class="flex gap-[10px] items-center">
-                  <img src="https://vuongnq.github.io/om-landing/home/assets/icon-app-design-poin-check-feature-CFoI-IJL.svg" alt="" />
+                  <img src="https://vuongnq.github.io/om-landing/home/assets/icon-app-design-poin-check-feature-DXWVIeYe.svg" alt="" />
                   <h4
                     id="app-themes-title"
                     class="flex-1 text-base md:text-[22px] font-medium bg-gradient-to-b from-white to-[#7C7C7C] bg-clip-text text-transparent"
@@ -1514,7 +1528,7 @@
               <!-- Breathe your brand’s soul to your app -->
               <div class="w-full px-4 md:px-40 flex flex-col gap-5">
                 <div class="flex gap-[10px] items-center">
-                  <img src="https://vuongnq.github.io/om-landing/home/assets/icon-app-design-poin-check-feature-CFoI-IJL.svg" alt="" />
+                  <img src="https://vuongnq.github.io/om-landing/home/assets/icon-app-design-poin-check-feature-DXWVIeYe.svg" alt="" />
                   <h4
                     id="app-themes-title"
                     class="flex-1 text-base md:text-[22px] font-medium bg-gradient-to-b from-white to-[#7C7C7C] bg-clip-text text-transparent"
@@ -1588,7 +1602,7 @@
               >
                 <div class="flex flex-col gap-5 md:gap-[36px]">
                   <div class="flex-1 flex gap-[10px] items-center">
-                    <img src="https://vuongnq.github.io/om-landing/home/assets/icon-app-design-poin-check-feature-CFoI-IJL.svg" alt="" />
+                    <img src="https://vuongnq.github.io/om-landing/home/assets/icon-app-design-poin-check-feature-DXWVIeYe.svg" alt="" />
                     <h4
                       id="app-themes-title"
                       class="flex-1 text-base md:text-[22px] font-medium bg-gradient-to-b from-white to-[#7C7C7C] bg-clip-text text-transparent"
@@ -1625,7 +1639,7 @@
                 >
                   <img src="https://vuongnq.github.io/om-landing/home/assets/qr-code-BrJ7rwxG.png" alt="qr-code" />
                   <div class="absolute w-[130%] bottom-[-4px] left-1/2 -translate-x-1/2">
-                    <img src="https://vuongnq.github.io/om-landing/home/assets/icon-bgr-qr-code-BeWVj5VB.svg" alt="qr-code" />
+                    <img src="https://vuongnq.github.io/om-landing/home/assets/icon-bgr-qr-code-Dxa0zbXx.svg" alt="qr-code" />
                   </div>
                 </div>
                 <button
@@ -1697,7 +1711,7 @@
                       class="section-user-acquisition__step-icon z-2 rounded-[6px] md:rounded-xl flex items-center justify-center"
                     >
                       <!-- Merchant logo SVG/icon -->
-                      <img src="https://vuongnq.github.io/om-landing/home/assets/icon-step-make-purchase-C1tEIWOZ.svg" alt="Discover icon" />
+                      <img src="https://vuongnq.github.io/om-landing/home/assets/icon-step-make-purchase-Bikvia_h.svg" alt="Discover icon" />
                     </div>
                     <div class="z-2 flex-1 flex flex-col">
                       <div class="flex items-center gap-1">
@@ -1730,7 +1744,7 @@
                           </h3>
                         </div>
                         <img
-                          src="https://vuongnq.github.io/om-landing/home/assets/chevron-down-zJlhbYwX.svg"
+                          src="https://vuongnq.github.io/om-landing/home/assets/chevron-down-CEJ2IYhI.svg"
                           alt="explore-dropdown-icon"
                           class="section-user-acquisition__step-icon-chevron md:hidden"
                         />
@@ -1762,7 +1776,7 @@
                       class="section-user-acquisition__step-icon z-2 rounded-[6px] md:rounded-xl flex items-center justify-center"
                     >
                       <!-- Merchant logo SVG/icon -->
-                      <img src="https://vuongnq.github.io/om-landing/home/assets/icon-step-make-purchase-C1tEIWOZ.svg" alt="Discover icon" />
+                      <img src="https://vuongnq.github.io/om-landing/home/assets/icon-step-make-purchase-Bikvia_h.svg" alt="Discover icon" />
                     </div>
                     <div class="z-2 flex-1 flex flex-col">
                       <div class="flex items-center gap-1">
@@ -1795,7 +1809,7 @@
                           </h3>
                         </div>
                         <img
-                          src="https://vuongnq.github.io/om-landing/home/assets/chevron-down-zJlhbYwX.svg"
+                          src="https://vuongnq.github.io/om-landing/home/assets/chevron-down-CEJ2IYhI.svg"
                           alt="explore-dropdown-icon"
                           class="section-user-acquisition__step-icon-chevron md:hidden"
                         />
@@ -1872,7 +1886,7 @@
               <div class="section flex flex-col gap-5">
                 <div class="flex gap-[10px] items-center">
                   <img
-                    src="https://vuongnq.github.io/om-landing/home/assets/icon-app-design-poin-check-feature-CFoI-IJL.svg"
+                    src="https://vuongnq.github.io/om-landing/home/assets/icon-app-design-poin-check-feature-DXWVIeYe.svg"
                     alt="icon-app-design-poin-check-feature"
                     class="md:hidden"
                   />
@@ -1902,7 +1916,7 @@
                             class="section-boost-engagement__step-icon z-2 rounded-[6px] md:rounded-xl flex items-center justify-center hidden md:flex"
                           >
                             <!-- Merchant logo SVG/icon -->
-                            <img src="https://vuongnq.github.io/om-landing/home/assets/icon-step-make-purchase-C1tEIWOZ.svg" alt="Discover icon" />
+                            <img src="https://vuongnq.github.io/om-landing/home/assets/icon-step-make-purchase-Bikvia_h.svg" alt="Discover icon" />
                           </div>
                           <div class="z-2 flex-1 flex flex-col">
                             <div class="flex items-center gap-1">
@@ -1914,7 +1928,7 @@
                                 </h3>
                               </div>
                               <img
-                                src="https://vuongnq.github.io/om-landing/home/assets/chevron-down-zJlhbYwX.svg"
+                                src="https://vuongnq.github.io/om-landing/home/assets/chevron-down-CEJ2IYhI.svg"
                                 alt="explore-dropdown-icon"
                                 class="section-boost-engagement__step-icon-chevron md:hidden"
                               />
@@ -1947,7 +1961,7 @@
                             class="section-boost-engagement__step-icon z-2 rounded-[6px] md:rounded-xl flex items-center justify-center hidden md:flex"
                           >
                             <!-- Merchant logo SVG/icon -->
-                            <img src="https://vuongnq.github.io/om-landing/home/assets/icon-step-make-purchase-C1tEIWOZ.svg" alt="Discover icon" />
+                            <img src="https://vuongnq.github.io/om-landing/home/assets/icon-step-make-purchase-Bikvia_h.svg" alt="Discover icon" />
                           </div>
                           <div class="z-2 flex-1 flex flex-col">
                             <div class="flex items-center gap-1">
@@ -1959,7 +1973,7 @@
                                 </h3>
                               </div>
                               <img
-                                src="https://vuongnq.github.io/om-landing/home/assets/chevron-down-zJlhbYwX.svg"
+                                src="https://vuongnq.github.io/om-landing/home/assets/chevron-down-CEJ2IYhI.svg"
                                 alt="explore-dropdown-icon"
                                 class="section-boost-engagement__step-icon-chevron md:hidden"
                               />
@@ -2022,7 +2036,7 @@
               <div class="flex flex-col gap-5">
                 <div class="flex gap-[10px] items-center px-4 md:px-40">
                   <img
-                    src="https://vuongnq.github.io/om-landing/home/assets/icon-app-design-poin-check-feature-CFoI-IJL.svg"
+                    src="https://vuongnq.github.io/om-landing/home/assets/icon-app-design-poin-check-feature-DXWVIeYe.svg"
                     alt="icon-app-design-poin-check-feature"
                     class="md:hidden"
                   />
@@ -2439,14 +2453,14 @@
                 <div class="flex flex-row gap-2">
                   <button class="cursor-pointer md:max-w-[194px] max-w-[120px]">
                     <img
-                      src="https://vuongnq.github.io/om-landing/home/assets/app-store-qUIRnu8P.svg"
+                      src="https://vuongnq.github.io/om-landing/home/assets/app-store-NqAuViof.svg"
                       alt="App Store"
                       class="max-w-full h-auto object-contain"
                     />
                   </button>
                   <button class="cursor-pointer md:max-w-[194px] max-w-[120px]">
                     <img
-                      src="https://vuongnq.github.io/om-landing/home/assets/google-play-D4TLW4CL.svg"
+                      src="https://vuongnq.github.io/om-landing/home/assets/google-play-CnQtwEcl.svg"
                       alt="Google Play"
                       class="max-w-full h-auto object-contain"
                     />
@@ -2492,7 +2506,7 @@
               >
                 <img
                   class="max-w-full h-auto object-contain hover:filter-none transition-all duration-300 grayscale contrast-150 sepia-35 brightness-130"
-                  src="https://vuongnq.github.io/om-landing/home/assets/logo-transcy-CqVeZUJw.svg"
+                  src="https://vuongnq.github.io/om-landing/home/assets/logo-transcy-ejaSA0bl.svg"
                   alt="transcy"
                 />
               </button>
@@ -2502,7 +2516,7 @@
               >
                 <img
                   class="max-w-full h-auto object-contain hover:filter-none transition-all duration-300 grayscale contrast-150 sepia-35 brightness-130"
-                  src="https://vuongnq.github.io/om-landing/home/assets/logo-oneloyalty-Bhp0pjwF.svg"
+                  src="https://vuongnq.github.io/om-landing/home/assets/logo-oneloyalty-CxDbe8xq.svg"
                   alt="oneloyalty"
                 />
               </button>
@@ -2512,7 +2526,7 @@
               >
                 <img
                   class="max-w-full h-auto object-contain hover:filter-none transition-all duration-300 grayscale contrast-150 sepia-35 brightness-130"
-                  src="https://vuongnq.github.io/om-landing/home/assets/logo-trueprofit-DwIgORzX.svg"
+                  src="https://vuongnq.github.io/om-landing/home/assets/logo-trueprofit-nNM_fHFV.svg"
                   alt="trueprofit"
                 />
               </button>
@@ -2522,7 +2536,7 @@
               >
                 <img
                   class="max-w-full h-auto object-contain hover:filter-none transition-all duration-300 grayscale contrast-150 sepia-35 brightness-130"
-                  src="https://vuongnq.github.io/om-landing/home/assets/logo-kudosi-CtUztque.svg"
+                  src="https://vuongnq.github.io/om-landing/home/assets/logo-kudosi-D0Q2Uddt.svg"
                   alt="kudosi"
                 />
               </button>
@@ -2532,7 +2546,7 @@
               >
                 <img
                   class="max-w-full h-auto object-contain hover:filter-none transition-all duration-300 grayscale contrast-150 sepia-35 brightness-130"
-                  src="https://vuongnq.github.io/om-landing/home/assets/logo-zopi-C36HpHSL.svg"
+                  src="https://vuongnq.github.io/om-landing/home/assets/logo-zopi-Cy01DF1X.svg"
                   alt="zopi"
                 />
               </button>
@@ -2542,7 +2556,7 @@
               >
                 <img
                   class="max-w-full h-auto object-contain hover:filter-none transition-all duration-300 grayscale contrast-150 sepia-35 brightness-130"
-                  src="https://vuongnq.github.io/om-landing/home/assets/logo-feedhub-CR65xd3w.svg"
+                  src="https://vuongnq.github.io/om-landing/home/assets/logo-feedhub-8uBPba4L.svg"
                   alt="feedhub"
                 />
               </button>
