@@ -9,17 +9,16 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     />
-
     <title>OM Landing</title>
     <script
       type="module"
       crossorigin
-      src="https://vuongnq.github.io/om-landing/integration/assets/index-aHp02NlW.js"
+      src="https://vuongnq.github.io/om-landing/integration/assets/index-G7HZb0h7.js"
     ></script>
     <link
       rel="stylesheet"
       crossorigin
-      href="https://vuongnq.github.io/om-landing/integration/assets/index-CadOsY5p.css"
+      href="https://vuongnq.github.io/om-landing/integration/assets/index-DlWnxE_A.css"
     />
   </head>
   <body>
@@ -30,8 +29,8 @@
         <!-- Logo Section -->
         <div class="menu-logo">
           <a href="/" aria-label="OneMobile.ai">
-            <img src="https://vuongnq.github.io/om-landing/integration/assets/logo-mobile-IpIf2qWJ.svg" alt="OneMobile Logo" class="logo-mobile" />
-            <img src="https://vuongnq.github.io/om-landing/integration/assets/logo-mobile-IpIf2qWJ.svg" alt="OneMobile Logo" class="logo-desktop" />
+            <img src="https://vuongnq.github.io/om-landing/integration/assets/logo-mobile-C9xAWjT6.svg" alt="OneMobile Logo" class="logo-mobile" />
+            <img src="https://vuongnq.github.io/om-landing/integration/assets/logo-mobile-C9xAWjT6.svg" alt="OneMobile Logo" class="logo-desktop" />
           </a>
         </div>
 
@@ -45,14 +44,14 @@
             <button aria-expanded="false" aria-haspopup="true" id="explore-dropdown-button">
               <span class="hidden md:inline">Explore</span>
               <img
-                src="https://vuongnq.github.io/om-landing/integration/assets/chevron-down-CEJ2IYhI.svg"
+                src="https://vuongnq.github.io/om-landing/integration/assets/chevron-down-zJlhbYwX.svg"
                 alt=""
                 id="explore-dropdown-icon"
                 class="hidden md:inline ml-1"
               />
               <!-- Mobile: Menu Icon -->
               <img
-                src="https://vuongnq.github.io/om-landing/integration/assets/icon-menu-tCesTpt5.svg"
+                src="https://vuongnq.github.io/om-landing/integration/assets/icon-menu-C1pUmUac.svg"
                 alt="Menu"
                 class="block cursor-pointer md:hidden"
                 id="mobile-menu-icon"
@@ -371,7 +370,7 @@
         <!-- Mobile Menu Header -->
         <div class="mobile-menu-header">
           <div class="mobile-menu-logo">
-            <img src="https://vuongnq.github.io/om-landing/integration/assets/logo-mobile-IpIf2qWJ.svg" alt="OneMobile Logo" />
+            <img src="https://vuongnq.github.io/om-landing/integration/assets/logo-mobile-C9xAWjT6.svg" alt="OneMobile Logo" />
           </div>
           <button id="mobile-menu-close" class="mobile-menu-close" aria-label="Close menu">
             <svg
@@ -715,7 +714,7 @@
 
         <!-- Search Box -->
         <div
-          class="w-full max-w-2xl flex items-center bg-white/20 border border-white/10 rounded-full px-6 py-5 backdrop-blur-lg"
+          class="w-full max-w-screen lg:max-w-[823px] flex items-center bg-white/20 border border-white/10 rounded-full px-6 py-5 backdrop-blur-lg"
         >
           <svg
             class="w-6 h-6 text-[#B7BBC2] mr-3"
@@ -735,7 +734,10 @@
         </div>
 
         <!-- Filter Categories -->
-        <div id="filter-categories" class="flex flex-wrap justify-center gap-x-12 gap-y-4">
+        <div
+          id="filter-categories"
+          class="flex flex-wrap justify-center gap-x-12 gap-y-4 w-full max-w-[80%]"
+        >
           <span class="filter-category text-[#676767] text-lg font-medium cursor-pointer active"
             >All categories</span
           >
@@ -763,20 +765,19 @@
         </div>
 
         <!-- Partner Integrations Grid -->
-        <div class="w-full max-w-[1120px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div
+          class="w-full max-w-[1120px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pt-1 lg:pt-[20px]"
+        >
           <!-- Partner Card -->
-          <div
-            class="bg-gradient-to-b from-[#101010] to-[#232323] border border-white/10 rounded-2xl p-7 flex flex-col min-h-[260px] relative shadow-lg"
-            data-category="block-partner"
-          >
-            <div class="flex items-center mb-5 relative">
+          <div class="card-partner p-6 flex flex-col" data-category="block-partner">
+            <div class="flex items-center mb-5 justify-between">
               <div
                 class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
               >
                 <img src="/assets/images/facebook.svg" alt="Facebook Ads" class="w-8 h-8" />
               </div>
               <span
-                class="bg-[#D2365C]/20 text-[#D2365C] text-xs font-semibold rounded-full px-3 py-1 absolute left-12 top-0 flex items-center"
+                class="bg-[#D2365C]/20 text-[#D2365C] text-xs font-semibold rounded-full px-3 py-1"
                 >Recommend</span
               >
             </div>
@@ -789,18 +790,15 @@
           </div>
 
           <!-- Partner Card -->
-          <div
-            class="bg-gradient-to-b from-[#101010] to-[#232323] border border-white/10 rounded-2xl p-7 flex flex-col min-h-[260px] relative shadow-lg"
-            data-category="block-partner"
-          >
-            <div class="flex items-center mb-5 relative">
+          <div class="card-partner p-6 flex flex-col" data-category="block-partner">
+            <div class="flex items-center mb-5 justify-between">
               <div
                 class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
               >
                 <img src="/assets/images/facebook.svg" alt="Facebook Ads" class="w-8 h-8" />
               </div>
               <span
-                class="bg-[#D2365C]/20 text-[#D2365C] text-xs font-semibold rounded-full px-3 py-1 absolute left-12 top-0 flex items-center"
+                class="bg-[#D2365C]/20 text-[#D2365C] text-xs font-semibold rounded-full px-3 py-1"
                 >Recommend</span
               >
             </div>
@@ -813,18 +811,15 @@
           </div>
 
           <!-- Partner Card -->
-          <div
-            class="bg-gradient-to-b from-[#101010] to-[#232323] border border-white/10 rounded-2xl p-7 flex flex-col min-h-[260px] relative shadow-lg"
-            data-category="block-partner"
-          >
-            <div class="flex items-center mb-5 relative">
+          <div class="card-partner p-6 flex flex-col" data-category="block-partner">
+            <div class="flex items-center mb-5 justify-between">
               <div
                 class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
               >
                 <img src="/assets/images/facebook.svg" alt="Facebook Ads" class="w-8 h-8" />
               </div>
               <span
-                class="bg-[#D2365C]/20 text-[#D2365C] text-xs font-semibold rounded-full px-3 py-1 absolute left-12 top-0 flex items-center"
+                class="bg-[#D2365C]/20 text-[#D2365C] text-xs font-semibold rounded-full px-3 py-1"
                 >Recommend</span
               >
             </div>
@@ -837,18 +832,15 @@
           </div>
 
           <!-- Partner Card -->
-          <div
-            class="bg-gradient-to-b from-[#101010] to-[#232323] border border-white/10 rounded-2xl p-7 flex flex-col min-h-[260px] relative shadow-lg"
-            data-category="block-partner"
-          >
-            <div class="flex items-center mb-5 relative">
+          <div class="card-partner p-6 flex flex-col" data-category="block-partner">
+            <div class="flex items-center mb-5 justify-between">
               <div
                 class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
               >
                 <img src="/assets/images/facebook.svg" alt="Facebook Ads" class="w-8 h-8" />
               </div>
               <span
-                class="bg-[#D2365C]/20 text-[#D2365C] text-xs font-semibold rounded-full px-3 py-1 absolute left-12 top-0 flex items-center"
+                class="bg-[#D2365C]/20 text-[#D2365C] text-xs font-semibold rounded-full px-3 py-1"
                 >Recommend</span
               >
             </div>
@@ -861,18 +853,15 @@
           </div>
 
           <!-- Partner Card -->
-          <div
-            class="bg-gradient-to-b from-[#101010] to-[#232323] border border-white/10 rounded-2xl p-7 flex flex-col min-h-[260px] relative shadow-lg"
-            data-category="block-partner"
-          >
-            <div class="flex items-center mb-5 relative">
+          <div class="card-partner p-6 flex flex-col" data-category="block-partner">
+            <div class="flex items-center mb-5 justify-between">
               <div
                 class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
               >
                 <img src="/assets/images/facebook.svg" alt="Facebook Ads" class="w-8 h-8" />
               </div>
               <span
-                class="bg-[#D2365C]/20 text-[#D2365C] text-xs font-semibold rounded-full px-3 py-1 absolute left-12 top-0 flex items-center"
+                class="bg-[#D2365C]/20 text-[#D2365C] text-xs font-semibold rounded-full px-3 py-1"
                 >Recommend</span
               >
             </div>
