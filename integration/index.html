@@ -13,12 +13,12 @@
     <script
       type="module"
       crossorigin
-      src="https://vuongnq.github.io/om-landing/integration/assets/index-Dm9kxRFK.js"
+      src="https://vuongnq.github.io/om-landing/integration/assets/index-CUU0pCWK.js"
     ></script>
     <link
       rel="stylesheet"
       crossorigin
-      href="https://vuongnq.github.io/om-landing/integration/assets/index-CSyw-uWO.css"
+      href="https://vuongnq.github.io/om-landing/integration/assets/index-D7hHzPrn.css"
     />
   </head>
   <body>
@@ -691,7 +691,6 @@
     </header>
 
     <main>
-      <!-- Integration Page Template -->
       <section
         class="section min-h-screen flex flex-col items-center bg-[#080808] py-20 px-4 pt-[72px] md:pt-[148px] gap-4 lg:gap-[40px]"
         data-app="page-integration"
@@ -707,7 +706,7 @@
             >
           </h1>
           <p class="text-lg md:text-xl text-[#B7BBC2] font-normal">
-            Connect OneMobile with your existing tools, apps, marketing channels & platforms to
+            Connect OneMobile with your existing tools, apps, marketing channels &amp; platforms to
             bring your customers unique experiences.
           </p>
         </div>
@@ -723,12 +722,13 @@
             stroke-width="1.5"
             viewBox="0 0 24 24"
           >
-            <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" />
-            <path stroke="currentColor" stroke-width="2" d="M21 21l-4.35-4.35" />
+            <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"></circle>
+            <path stroke="currentColor" stroke-width="2" d="M21 21l-4.35-4.35"></path>
           </svg>
           <input
             type="text"
             placeholder="Search"
+            name="search-category"
             class="flex-1 bg-transparent outline-none text-lg text-white placeholder-[#B7BBC2]"
           />
         </div>
@@ -738,29 +738,55 @@
           id="filter-categories"
           class="flex flex-wrap justify-center gap-x-12 gap-y-4 w-full max-w-[80%]"
         >
-          <span class="filter-category text-[#676767] text-lg font-medium cursor-pointer active"
+          <span
+            class="filter-category text-[#676767] text-lg font-medium cursor-pointer active"
+            data-term="all-categories"
             >All categories</span
           >
-          <span class="filter-category text-[#676767] text-lg font-medium cursor-pointer"
-            >Customer analytics</span
-          >
-          <span class="filter-category text-[#676767] text-lg font-medium cursor-pointer"
-            >Product reviews</span
-          >
-          <span class="filter-category text-[#676767] text-lg font-medium cursor-pointer"
-            >Email marketing</span
-          >
-          <span class="filter-category text-[#676767] text-lg font-medium cursor-pointer"
-            >Search, navigation, and filters</span
-          >
-          <span class="filter-category text-[#676767] text-lg font-medium cursor-pointer"
+          <span
+            class="filter-category text-[#676767] text-lg font-medium cursor-pointer"
+            data-term="chat"
             >Chat</span
           >
-          <span class="filter-category text-[#676767] text-lg font-medium cursor-pointer"
+          <span
+            class="filter-category text-[#676767] text-lg font-medium cursor-pointer"
+            data-term="customer-analytics"
+            >Customer analytics</span
+          >
+          <span
+            class="filter-category text-[#676767] text-lg font-medium cursor-pointer"
+            data-term="email-marketing"
+            >Email marketing</span
+          >
+          <span
+            class="filter-category text-[#676767] text-lg font-medium cursor-pointer"
+            data-term="gift-with-purchase"
             >Gift with purchase</span
           >
-          <span class="filter-category text-[#676767] text-lg font-medium cursor-pointer"
+          <span
+            class="filter-category text-[#676767] text-lg font-medium cursor-pointer"
+            data-term="language-and-translations"
+            >Language and translations</span
+          >
+          <span
+            class="filter-category text-[#676767] text-lg font-medium cursor-pointer"
+            data-term="loyalty-and-rewards"
+            >Loyalty and rewards</span
+          >
+          <span
+            class="filter-category text-[#676767] text-lg font-medium cursor-pointer"
+            data-term="others"
             >Others</span
+          >
+          <span
+            class="filter-category text-[#676767] text-lg font-medium cursor-pointer"
+            data-term="product-reviews"
+            >Product reviews</span
+          >
+          <span
+            class="filter-category text-[#676767] text-lg font-medium cursor-pointer"
+            data-term="search-navigation-and-filters"
+            >Search, navigation, and filters</span
           >
         </div>
 
@@ -769,108 +795,1022 @@
           class="w-full max-w-[1120px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pt-1 lg:pt-[20px]"
         >
           <!-- Partner Card -->
-          <div class="card-partner p-6 flex flex-col" data-category="block-partner">
-            <div class="flex items-center mb-5 justify-between">
-              <div
-                class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
-              >
-                <img src="/assets/images/facebook.svg" alt="Facebook Ads" class="w-8 h-8" />
+          <div
+            class="card-partner p-6 flex flex-col justify-between"
+            data-category="language-and-translations"
+          >
+            <div class="flex flex-col">
+              <div class="flex items-center mb-5 justify-between">
+                <div
+                  class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
+                >
+                  <img
+                    src="https://beta.onemobile.ai/wp-content/uploads/2024/03/Group-3.png"
+                    alt="Transcy"
+                    class="w-8 h-8"
+                  />
+                </div>
+                <span
+                  class="bg-[#D2365C]/20 text-[#FF004F] text-xs font-semibold rounded-full px-3 py-1"
+                  >Staff-Pick</span
+                >
               </div>
-              <span
-                class="bg-[#D2365C]/20 text-[#D2365C] text-xs font-semibold rounded-full px-3 py-1"
-                >Recommend</span
+              <div class="mb-2">
+                <h3 class="text-xl font-semibold text-white">Transcy</h3>
+              </div>
+              <p class="text-[#B7BBC2] text-base mb-[18px] line-clamp-2">
+                Multiple languages and currencies for products, reviews, and more.
+              </p>
+            </div>
+            <a
+              href="https://shopify.pxf.io/WqkRnJ"
+              target="_blank"
+              class="flex items-center cursor-pointer text-sm font-medium text-[#FF004F] hover:underline hover-apply-child"
+            >
+              <span>Explore More</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="#ffffff"
               >
-            </div>
-            <div class="mb-2">
-              <h3 class="text-xl font-semibold text-white">Facebook Ads</h3>
-            </div>
-            <p class="text-[#B7BBC2] text-base">
-              Access to ad targeting and analytics tools for campaign management.
-            </p>
+                <path
+                  d="M1.66668 9.66779H16.3217L11.9108 5.25696C11.8313 5.18009 11.7678 5.08813 11.7241 4.98646C11.6804 4.88479 11.6574 4.77544 11.6565 4.66479C11.6555 4.55414 11.6766 4.44441 11.7185 4.342C11.7604 4.23958 11.8223 4.14654 11.9005 4.0683C11.9788 3.99005 12.0718 3.92817 12.1742 3.88627C12.2766 3.84437 12.3864 3.82329 12.497 3.82425C12.6077 3.82521 12.717 3.8482 12.8187 3.89187C12.9204 3.93555 13.0123 3.99903 13.0892 4.07863L18.9225 9.91196C19.0787 10.0682 19.1665 10.2802 19.1665 10.5011C19.1665 10.7221 19.0787 10.934 18.9225 11.0903L13.0892 16.9236C12.932 17.0754 12.7215 17.1594 12.503 17.1575C12.2845 17.1556 12.0755 17.068 11.921 16.9135C11.7665 16.759 11.6789 16.55 11.677 16.3315C11.6751 16.113 11.759 15.9025 11.9108 15.7453L16.3217 11.3345H1.66668C1.44567 11.3345 1.23371 11.2467 1.07743 11.0904C0.921144 10.9341 0.833347 10.7221 0.833347 10.5011C0.833347 10.2801 0.921144 10.0682 1.07743 9.91187C1.23371 9.75559 1.44567 9.66779 1.66668 9.66779Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
           </div>
-
-          <!-- Partner Card -->
-          <div class="card-partner p-6 flex flex-col" data-category="block-partner">
-            <div class="flex items-center mb-5 justify-between">
-              <div
-                class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
-              >
-                <img src="/assets/images/facebook.svg" alt="Facebook Ads" class="w-8 h-8" />
+          <div
+            class="card-partner p-6 flex flex-col justify-between"
+            data-category="gift-with-purchase"
+          >
+            <div class="flex flex-col">
+              <div class="flex items-center mb-5 justify-between">
+                <div
+                  class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
+                >
+                  <img
+                    src="https://beta.onemobile.ai/wp-content/uploads/2024/03/image-93.png"
+                    alt="BOGOS: Free gift &amp; Buy X Get Y"
+                    class="w-8 h-8"
+                  />
+                </div>
+                <span
+                  class="bg-[#D2365C]/20 text-[#FF004F] text-xs font-semibold rounded-full px-3 py-1"
+                  >Staff-Pick</span
+                >
               </div>
-              <span
-                class="bg-[#D2365C]/20 text-[#D2365C] text-xs font-semibold rounded-full px-3 py-1"
-                >Recommend</span
+              <div class="mb-2">
+                <h3 class="text-xl font-semibold text-white">BOGOS: Free gift &amp; Buy X Get Y</h3>
+              </div>
+              <p class="text-[#B7BBC2] text-base mb-[18px] line-clamp-2">
+                Free gift &amp; Buy X Get Y to turn visitors into customers.
+              </p>
+            </div>
+            <a
+              href="https://shopify.pxf.io/rQPOZj"
+              target="_blank"
+              class="flex items-center cursor-pointer text-sm font-medium text-[#FF004F] hover:underline hover-apply-child"
+            >
+              <span>Explore More</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="#ffffff"
               >
-            </div>
-            <div class="mb-2">
-              <h3 class="text-xl font-semibold text-white">Facebook Ads</h3>
-            </div>
-            <p class="text-[#B7BBC2] text-base">
-              Access to ad targeting and analytics tools for campaign management.
-            </p>
+                <path
+                  d="M1.66668 9.66779H16.3217L11.9108 5.25696C11.8313 5.18009 11.7678 5.08813 11.7241 4.98646C11.6804 4.88479 11.6574 4.77544 11.6565 4.66479C11.6555 4.55414 11.6766 4.44441 11.7185 4.342C11.7604 4.23958 11.8223 4.14654 11.9005 4.0683C11.9788 3.99005 12.0718 3.92817 12.1742 3.88627C12.2766 3.84437 12.3864 3.82329 12.497 3.82425C12.6077 3.82521 12.717 3.8482 12.8187 3.89187C12.9204 3.93555 13.0123 3.99903 13.0892 4.07863L18.9225 9.91196C19.0787 10.0682 19.1665 10.2802 19.1665 10.5011C19.1665 10.7221 19.0787 10.934 18.9225 11.0903L13.0892 16.9236C12.932 17.0754 12.7215 17.1594 12.503 17.1575C12.2845 17.1556 12.0755 17.068 11.921 16.9135C11.7665 16.759 11.6789 16.55 11.677 16.3315C11.6751 16.113 11.759 15.9025 11.9108 15.7453L16.3217 11.3345H1.66668C1.44567 11.3345 1.23371 11.2467 1.07743 11.0904C0.921144 10.9341 0.833347 10.7221 0.833347 10.5011C0.833347 10.2801 0.921144 10.0682 1.07743 9.91187C1.23371 9.75559 1.44567 9.66779 1.66668 9.66779Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
           </div>
-
-          <!-- Partner Card -->
-          <div class="card-partner p-6 flex flex-col" data-category="block-partner">
-            <div class="flex items-center mb-5 justify-between">
-              <div
-                class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
-              >
-                <img src="/assets/images/facebook.svg" alt="Facebook Ads" class="w-8 h-8" />
+          <div
+            class="card-partner p-6 flex flex-col justify-between"
+            data-category="customer-analytics"
+          >
+            <div class="flex flex-col">
+              <div class="flex items-center mb-5 justify-between">
+                <div
+                  class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
+                >
+                  <img
+                    src="https://beta.onemobile.ai/wp-content/uploads/2024/10/CLjzrviN44ADEAE.webp"
+                    alt="ECPower: Segment CRM &amp; Insight"
+                    class="w-8 h-8"
+                  />
+                </div>
+                <span
+                  class="bg-[#D2365C]/20 text-[#FF004F] text-xs font-semibold rounded-full px-3 py-1"
+                  >Staff-Pick</span
+                >
               </div>
-              <span
-                class="bg-[#D2365C]/20 text-[#D2365C] text-xs font-semibold rounded-full px-3 py-1"
-                >Recommend</span
+              <div class="mb-2">
+                <h3 class="text-xl font-semibold text-white">ECPower: Segment CRM &amp; Insight</h3>
+              </div>
+              <p class="text-[#B7BBC2] text-base mb-[18px] line-clamp-2">
+                Turn scattered customer data into actionable segments to unlock personalization and
+                drive retention.
+              </p>
+            </div>
+            <a
+              href="https://apps.shopify.com/ecpower?utm_source=onemobile&amp;utm_medium=bannar&amp;utm_campaign=partner"
+              target="_blank"
+              class="flex items-center cursor-pointer text-sm font-medium text-[#FF004F] hover:underline hover-apply-child"
+            >
+              <span>Explore More</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="#ffffff"
               >
-            </div>
-            <div class="mb-2">
-              <h3 class="text-xl font-semibold text-white">Facebook Ads</h3>
-            </div>
-            <p class="text-[#B7BBC2] text-base">
-              Access to ad targeting and analytics tools for campaign management.
-            </p>
+                <path
+                  d="M1.66668 9.66779H16.3217L11.9108 5.25696C11.8313 5.18009 11.7678 5.08813 11.7241 4.98646C11.6804 4.88479 11.6574 4.77544 11.6565 4.66479C11.6555 4.55414 11.6766 4.44441 11.7185 4.342C11.7604 4.23958 11.8223 4.14654 11.9005 4.0683C11.9788 3.99005 12.0718 3.92817 12.1742 3.88627C12.2766 3.84437 12.3864 3.82329 12.497 3.82425C12.6077 3.82521 12.717 3.8482 12.8187 3.89187C12.9204 3.93555 13.0123 3.99903 13.0892 4.07863L18.9225 9.91196C19.0787 10.0682 19.1665 10.2802 19.1665 10.5011C19.1665 10.7221 19.0787 10.934 18.9225 11.0903L13.0892 16.9236C12.932 17.0754 12.7215 17.1594 12.503 17.1575C12.2845 17.1556 12.0755 17.068 11.921 16.9135C11.7665 16.759 11.6789 16.55 11.677 16.3315C11.6751 16.113 11.759 15.9025 11.9108 15.7453L16.3217 11.3345H1.66668C1.44567 11.3345 1.23371 11.2467 1.07743 11.0904C0.921144 10.9341 0.833347 10.7221 0.833347 10.5011C0.833347 10.2801 0.921144 10.0682 1.07743 9.91187C1.23371 9.75559 1.44567 9.66779 1.66668 9.66779Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
           </div>
-
-          <!-- Partner Card -->
-          <div class="card-partner p-6 flex flex-col" data-category="block-partner">
-            <div class="flex items-center mb-5 justify-between">
-              <div
-                class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
-              >
-                <img src="/assets/images/facebook.svg" alt="Facebook Ads" class="w-8 h-8" />
+          <div
+            class="card-partner p-6 flex flex-col justify-between"
+            data-category="customer-analytics"
+            data-title="Google Analytics"
+          >
+            <div class="flex flex-col">
+              <div class="flex items-center mb-5 justify-between">
+                <div
+                  class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
+                >
+                  <img
+                    src="https://beta.onemobile.ai/wp-content/uploads/2024/03/GAnalytics-1.png"
+                    alt="Google Analytics"
+                    class="w-8 h-8"
+                  />
+                </div>
+                <span
+                  class="bg-[#D2365C]/20 text-[#FF004F] text-xs font-semibold rounded-full px-3 py-1"
+                  >Recommended</span
+                >
               </div>
-              <span
-                class="bg-[#D2365C]/20 text-[#D2365C] text-xs font-semibold rounded-full px-3 py-1"
-                >Recommend</span
+              <div class="mb-2">
+                <h3 class="text-xl font-semibold text-white">Google Analytics</h3>
+              </div>
+              <p class="text-[#B7BBC2] text-base mb-[18px] line-clamp-2">
+                Get insights into app usage, engagement, and more.
+              </p>
+            </div>
+            <a
+              href="https://www.shopify.com/admin/apps/onemobile/integrations"
+              target="_blank"
+              class="flex items-center cursor-pointer text-sm font-medium text-[#FF004F] hover:underline hover-apply-child"
+            >
+              <span>Connect in OneMobile</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="#ffffff"
               >
-            </div>
-            <div class="mb-2">
-              <h3 class="text-xl font-semibold text-white">Facebook Ads</h3>
-            </div>
-            <p class="text-[#B7BBC2] text-base">
-              Access to ad targeting and analytics tools for campaign management.
-            </p>
+                <path
+                  d="M1.66668 9.66779H16.3217L11.9108 5.25696C11.8313 5.18009 11.7678 5.08813 11.7241 4.98646C11.6804 4.88479 11.6574 4.77544 11.6565 4.66479C11.6555 4.55414 11.6766 4.44441 11.7185 4.342C11.7604 4.23958 11.8223 4.14654 11.9005 4.0683C11.9788 3.99005 12.0718 3.92817 12.1742 3.88627C12.2766 3.84437 12.3864 3.82329 12.497 3.82425C12.6077 3.82521 12.717 3.8482 12.8187 3.89187C12.9204 3.93555 13.0123 3.99903 13.0892 4.07863L18.9225 9.91196C19.0787 10.0682 19.1665 10.2802 19.1665 10.5011C19.1665 10.7221 19.0787 10.934 18.9225 11.0903L13.0892 16.9236C12.932 17.0754 12.7215 17.1594 12.503 17.1575C12.2845 17.1556 12.0755 17.068 11.921 16.9135C11.7665 16.759 11.6789 16.55 11.677 16.3315C11.6751 16.113 11.759 15.9025 11.9108 15.7453L16.3217 11.3345H1.66668C1.44567 11.3345 1.23371 11.2467 1.07743 11.0904C0.921144 10.9341 0.833347 10.7221 0.833347 10.5011C0.833347 10.2801 0.921144 10.0682 1.07743 9.91187C1.23371 9.75559 1.44567 9.66779 1.66668 9.66779Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
           </div>
-
-          <!-- Partner Card -->
-          <div class="card-partner p-6 flex flex-col" data-category="block-partner">
-            <div class="flex items-center mb-5 justify-between">
-              <div
-                class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
-              >
-                <img src="/assets/images/facebook.svg" alt="Facebook Ads" class="w-8 h-8" />
+          <div
+            class="card-partner p-6 flex flex-col justify-between"
+            data-category="customer-analytics"
+          >
+            <div class="flex flex-col">
+              <div class="flex items-center mb-5 justify-between">
+                <div
+                  class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
+                >
+                  <img
+                    src="https://beta.onemobile.ai/wp-content/uploads/2024/03/facebook_ads-1.png"
+                    alt="Facebook Ads"
+                    class="w-8 h-8"
+                  />
+                </div>
+                <span
+                  class="bg-[#D2365C]/20 text-[#FF004F] text-xs font-semibold rounded-full px-3 py-1"
+                  >Recommended</span
+                >
               </div>
-              <span
-                class="bg-[#D2365C]/20 text-[#D2365C] text-xs font-semibold rounded-full px-3 py-1"
-                >Recommend</span
+              <div class="mb-2">
+                <h3 class="text-xl font-semibold text-white">Facebook Ads</h3>
+              </div>
+              <p class="text-[#B7BBC2] text-base mb-[18px] line-clamp-2">
+                Access to ad targeting and analytics tools for campaign management.
+              </p>
+            </div>
+            <a
+              href="https://www.shopify.com/admin/apps/onemobile/integrations"
+              target="_blank"
+              class="flex items-center cursor-pointer text-sm font-medium text-[#FF004F] hover:underline hover-apply-child"
+            >
+              <span>Connect in OneMobile</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="#ffffff"
               >
+                <path
+                  d="M1.66668 9.66779H16.3217L11.9108 5.25696C11.8313 5.18009 11.7678 5.08813 11.7241 4.98646C11.6804 4.88479 11.6574 4.77544 11.6565 4.66479C11.6555 4.55414 11.6766 4.44441 11.7185 4.342C11.7604 4.23958 11.8223 4.14654 11.9005 4.0683C11.9788 3.99005 12.0718 3.92817 12.1742 3.88627C12.2766 3.84437 12.3864 3.82329 12.497 3.82425C12.6077 3.82521 12.717 3.8482 12.8187 3.89187C12.9204 3.93555 13.0123 3.99903 13.0892 4.07863L18.9225 9.91196C19.0787 10.0682 19.1665 10.2802 19.1665 10.5011C19.1665 10.7221 19.0787 10.934 18.9225 11.0903L13.0892 16.9236C12.932 17.0754 12.7215 17.1594 12.503 17.1575C12.2845 17.1556 12.0755 17.068 11.921 16.9135C11.7665 16.759 11.6789 16.55 11.677 16.3315C11.6751 16.113 11.759 15.9025 11.9108 15.7453L16.3217 11.3345H1.66668C1.44567 11.3345 1.23371 11.2467 1.07743 11.0904C0.921144 10.9341 0.833347 10.7221 0.833347 10.5011C0.833347 10.2801 0.921144 10.0682 1.07743 9.91187C1.23371 9.75559 1.44567 9.66779 1.66668 9.66779Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div
+            class="card-partner p-6 flex flex-col justify-between"
+            data-category="customer-analytics"
+          >
+            <div class="flex flex-col">
+              <div class="flex items-center mb-5 justify-between">
+                <div
+                  class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
+                >
+                  <img
+                    src="https://beta.onemobile.ai/wp-content/uploads/2024/03/Logo-1.png"
+                    alt="Amplitude"
+                    class="w-8 h-8"
+                  />
+                </div>
+                <span
+                  class="bg-[#D2365C]/20 text-[#FF004F] text-xs font-semibold rounded-full px-3 py-1"
+                  >Recommended</span
+                >
+              </div>
+              <div class="mb-2">
+                <h3 class="text-xl font-semibold text-white">Amplitude</h3>
+              </div>
+              <p class="text-[#B7BBC2] text-base mb-[18px] line-clamp-2">
+                Drive growth with data-driven insights on customer behavior.
+              </p>
             </div>
-            <div class="mb-2">
-              <h3 class="text-xl font-semibold text-white">Facebook Ads</h3>
+            <a
+              href="https://www.shopify.com/admin/apps/onemobile/integrations"
+              target="_blank"
+              class="flex items-center cursor-pointer text-sm font-medium text-[#FF004F] hover:underline hover-apply-child"
+            >
+              <span>Connect in OneMobile</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="#ffffff"
+              >
+                <path
+                  d="M1.66668 9.66779H16.3217L11.9108 5.25696C11.8313 5.18009 11.7678 5.08813 11.7241 4.98646C11.6804 4.88479 11.6574 4.77544 11.6565 4.66479C11.6555 4.55414 11.6766 4.44441 11.7185 4.342C11.7604 4.23958 11.8223 4.14654 11.9005 4.0683C11.9788 3.99005 12.0718 3.92817 12.1742 3.88627C12.2766 3.84437 12.3864 3.82329 12.497 3.82425C12.6077 3.82521 12.717 3.8482 12.8187 3.89187C12.9204 3.93555 13.0123 3.99903 13.0892 4.07863L18.9225 9.91196C19.0787 10.0682 19.1665 10.2802 19.1665 10.5011C19.1665 10.7221 19.0787 10.934 18.9225 11.0903L13.0892 16.9236C12.932 17.0754 12.7215 17.1594 12.503 17.1575C12.2845 17.1556 12.0755 17.068 11.921 16.9135C11.7665 16.759 11.6789 16.55 11.677 16.3315C11.6751 16.113 11.759 15.9025 11.9108 15.7453L16.3217 11.3345H1.66668C1.44567 11.3345 1.23371 11.2467 1.07743 11.0904C0.921144 10.9341 0.833347 10.7221 0.833347 10.5011C0.833347 10.2801 0.921144 10.0682 1.07743 9.91187C1.23371 9.75559 1.44567 9.66779 1.66668 9.66779Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="card-partner p-6 flex flex-col justify-between" data-category="others">
+            <div class="flex flex-col">
+              <div class="flex items-center mb-5 justify-between">
+                <div
+                  class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
+                >
+                  <img
+                    src="https://beta.onemobile.ai/wp-content/uploads/2024/07/300x300.jpg"
+                    alt="Tiny SEO Image optimize, Speed"
+                    class="w-8 h-8"
+                  />
+                </div>
+                <span
+                  class="bg-[#D2365C]/20 text-[#FF004F] text-xs font-semibold rounded-full px-3 py-1"
+                  >20% off via OneMobile</span
+                >
+              </div>
+              <div class="mb-2">
+                <h3 class="text-xl font-semibold text-white">Tiny SEO Image optimize, Speed</h3>
+              </div>
+              <p class="text-[#B7BBC2] text-base mb-[18px] line-clamp-2">
+                Optimize your website’s SEO and speed with TinyIMG
+              </p>
             </div>
-            <p class="text-[#B7BBC2] text-base">
-              Access to ad targeting and analytics tools for campaign management.
-            </p>
+            <a
+              href="https://tiny-img.com?ref=onemobile"
+              target="_blank"
+              class="flex items-center cursor-pointer text-sm font-medium text-[#FF004F] hover:underline hover-apply-child"
+            >
+              <span>Claim the promotion</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="#ffffff"
+              >
+                <path
+                  d="M1.66668 9.66779H16.3217L11.9108 5.25696C11.8313 5.18009 11.7678 5.08813 11.7241 4.98646C11.6804 4.88479 11.6574 4.77544 11.6565 4.66479C11.6555 4.55414 11.6766 4.44441 11.7185 4.342C11.7604 4.23958 11.8223 4.14654 11.9005 4.0683C11.9788 3.99005 12.0718 3.92817 12.1742 3.88627C12.2766 3.84437 12.3864 3.82329 12.497 3.82425C12.6077 3.82521 12.717 3.8482 12.8187 3.89187C12.9204 3.93555 13.0123 3.99903 13.0892 4.07863L18.9225 9.91196C19.0787 10.0682 19.1665 10.2802 19.1665 10.5011C19.1665 10.7221 19.0787 10.934 18.9225 11.0903L13.0892 16.9236C12.932 17.0754 12.7215 17.1594 12.503 17.1575C12.2845 17.1556 12.0755 17.068 11.921 16.9135C11.7665 16.759 11.6789 16.55 11.677 16.3315C11.6751 16.113 11.759 15.9025 11.9108 15.7453L16.3217 11.3345H1.66668C1.44567 11.3345 1.23371 11.2467 1.07743 11.0904C0.921144 10.9341 0.833347 10.7221 0.833347 10.5011C0.833347 10.2801 0.921144 10.0682 1.07743 9.91187C1.23371 9.75559 1.44567 9.66779 1.66668 9.66779Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="card-partner p-6 flex flex-col justify-between" data-category="chat">
+            <div class="flex flex-col">
+              <div class="flex items-center mb-5 justify-between">
+                <div
+                  class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
+                >
+                  <img
+                    src="https://beta.onemobile.ai/wp-content/uploads/2024/03/CPrw4d6I5fECEAE-1.png"
+                    alt="Shopify Inbox"
+                    class="w-8 h-8"
+                  />
+                </div>
+              </div>
+              <div class="mb-2">
+                <h3 class="text-xl font-semibold text-white">Shopify Inbox</h3>
+              </div>
+              <p class="text-[#B7BBC2] text-base mb-[18px] line-clamp-2">
+                Acquire new customers and close sales by connecting with shoppers in chat.
+              </p>
+            </div>
+            <a
+              href="https://shopify.pxf.io/AWN2JK"
+              target="_blank"
+              class="flex items-center cursor-pointer text-sm font-medium text-[#FF004F] hover:underline hover-apply-child"
+            >
+              <span>Explore More</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="#ffffff"
+              >
+                <path
+                  d="M1.66668 9.66779H16.3217L11.9108 5.25696C11.8313 5.18009 11.7678 5.08813 11.7241 4.98646C11.6804 4.88479 11.6574 4.77544 11.6565 4.66479C11.6555 4.55414 11.6766 4.44441 11.7185 4.342C11.7604 4.23958 11.8223 4.14654 11.9005 4.0683C11.9788 3.99005 12.0718 3.92817 12.1742 3.88627C12.2766 3.84437 12.3864 3.82329 12.497 3.82425C12.6077 3.82521 12.717 3.8482 12.8187 3.89187C12.9204 3.93555 13.0123 3.99903 13.0892 4.07863L18.9225 9.91196C19.0787 10.0682 19.1665 10.2802 19.1665 10.5011C19.1665 10.7221 19.0787 10.934 18.9225 11.0903L13.0892 16.9236C12.932 17.0754 12.7215 17.1594 12.503 17.1575C12.2845 17.1556 12.0755 17.068 11.921 16.9135C11.7665 16.759 11.6789 16.55 11.677 16.3315C11.6751 16.113 11.759 15.9025 11.9108 15.7453L16.3217 11.3345H1.66668C1.44567 11.3345 1.23371 11.2467 1.07743 11.0904C0.921144 10.9341 0.833347 10.7221 0.833347 10.5011C0.833347 10.2801 0.921144 10.0682 1.07743 9.91187C1.23371 9.75559 1.44567 9.66779 1.66668 9.66779Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div
+            class="card-partner p-6 flex flex-col justify-between"
+            data-category="loyalty-and-rewards"
+          >
+            <div class="flex flex-col">
+              <div class="flex items-center mb-5 justify-between">
+                <div
+                  class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
+                >
+                  <img
+                    src="https://beta.onemobile.ai/wp-content/uploads/2024/03/AMPL-501a52ff-1.png"
+                    alt="BON: Loyalty Program &amp; Rewards"
+                    class="w-8 h-8"
+                  />
+                </div>
+                <span
+                  class="bg-[#D2365C]/20 text-[#FF004F] text-xs font-semibold rounded-full px-3 py-1"
+                  >Staff-Pick</span
+                >
+              </div>
+              <div class="mb-2">
+                <h3 class="text-xl font-semibold text-white">BON: Loyalty Program &amp; Rewards</h3>
+              </div>
+              <p class="text-[#B7BBC2] text-base mb-[18px] line-clamp-2">
+                Increase repeat purchases and boost sale streams with powerful Loyalty &amp; Rewards
+                programs
+              </p>
+            </div>
+            <a
+              href="https://partners.smartifyapps.com/apps/bon_loyalty/OneMobile"
+              target="_blank"
+              class="flex items-center cursor-pointer text-sm font-medium text-[#FF004F] hover:underline hover-apply-child"
+            >
+              <span>Explore More</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="#ffffff"
+              >
+                <path
+                  d="M1.66668 9.66779H16.3217L11.9108 5.25696C11.8313 5.18009 11.7678 5.08813 11.7241 4.98646C11.6804 4.88479 11.6574 4.77544 11.6565 4.66479C11.6555 4.55414 11.6766 4.44441 11.7185 4.342C11.7604 4.23958 11.8223 4.14654 11.9005 4.0683C11.9788 3.99005 12.0718 3.92817 12.1742 3.88627C12.2766 3.84437 12.3864 3.82329 12.497 3.82425C12.6077 3.82521 12.717 3.8482 12.8187 3.89187C12.9204 3.93555 13.0123 3.99903 13.0892 4.07863L18.9225 9.91196C19.0787 10.0682 19.1665 10.2802 19.1665 10.5011C19.1665 10.7221 19.0787 10.934 18.9225 11.0903L13.0892 16.9236C12.932 17.0754 12.7215 17.1594 12.503 17.1575C12.2845 17.1556 12.0755 17.068 11.921 16.9135C11.7665 16.759 11.6789 16.55 11.677 16.3315C11.6751 16.113 11.759 15.9025 11.9108 15.7453L16.3217 11.3345H1.66668C1.44567 11.3345 1.23371 11.2467 1.07743 11.0904C0.921144 10.9341 0.833347 10.7221 0.833347 10.5011C0.833347 10.2801 0.921144 10.0682 1.07743 9.91187C1.23371 9.75559 1.44567 9.66779 1.66668 9.66779Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div
+            class="card-partner p-6 flex flex-col justify-between"
+            data-category="search-navigation-and-filters"
+          >
+            <div class="flex flex-col">
+              <div class="flex items-center mb-5 justify-between">
+                <div
+                  class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
+                >
+                  <img
+                    src="https://beta.onemobile.ai/wp-content/uploads/2024/03/boost_ai.png"
+                    alt="Boost AI Search &amp; Filter"
+                    class="w-8 h-8"
+                  />
+                </div>
+              </div>
+              <div class="mb-2">
+                <h3 class="text-xl font-semibold text-white">Boost AI Search &amp; Filter</h3>
+              </div>
+              <p class="text-[#B7BBC2] text-base mb-[18px] line-clamp-2">
+                AI-powered search bar, product filter and discovery tools.
+              </p>
+            </div>
+            <a
+              href="https://shopify.pxf.io/PyD43j"
+              target="_blank"
+              class="flex items-center cursor-pointer text-sm font-medium text-[#FF004F] hover:underline hover-apply-child"
+            >
+              <span>Explore More</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="#ffffff"
+              >
+                <path
+                  d="M1.66668 9.66779H16.3217L11.9108 5.25696C11.8313 5.18009 11.7678 5.08813 11.7241 4.98646C11.6804 4.88479 11.6574 4.77544 11.6565 4.66479C11.6555 4.55414 11.6766 4.44441 11.7185 4.342C11.7604 4.23958 11.8223 4.14654 11.9005 4.0683C11.9788 3.99005 12.0718 3.92817 12.1742 3.88627C12.2766 3.84437 12.3864 3.82329 12.497 3.82425C12.6077 3.82521 12.717 3.8482 12.8187 3.89187C12.9204 3.93555 13.0123 3.99903 13.0892 4.07863L18.9225 9.91196C19.0787 10.0682 19.1665 10.2802 19.1665 10.5011C19.1665 10.7221 19.0787 10.934 18.9225 11.0903L13.0892 16.9236C12.932 17.0754 12.7215 17.1594 12.503 17.1575C12.2845 17.1556 12.0755 17.068 11.921 16.9135C11.7665 16.759 11.6789 16.55 11.677 16.3315C11.6751 16.113 11.759 15.9025 11.9108 15.7453L16.3217 11.3345H1.66668C1.44567 11.3345 1.23371 11.2467 1.07743 11.0904C0.921144 10.9341 0.833347 10.7221 0.833347 10.5011C0.833347 10.2801 0.921144 10.0682 1.07743 9.91187C1.23371 9.75559 1.44567 9.66779 1.66668 9.66779Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div
+            class="card-partner p-6 flex flex-col justify-between"
+            data-category="email-marketing"
+          >
+            <div class="flex flex-col">
+              <div class="flex items-center mb-5 justify-between">
+                <div
+                  class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
+                >
+                  <img
+                    src="https://beta.onemobile.ai/wp-content/uploads/2024/03/image-92-1.png"
+                    alt="Klaviyo"
+                    class="w-8 h-8"
+                  />
+                </div>
+              </div>
+              <div class="mb-2">
+                <h3 class="text-xl font-semibold text-white">Klaviyo</h3>
+              </div>
+              <p class="text-[#B7BBC2] text-base mb-[18px] line-clamp-2">
+                Automation, analytics, segmentation for personalized email campaigns.
+              </p>
+            </div>
+            <a
+              href="https://shopify.pxf.io/WqkRmJ"
+              target="_blank"
+              class="flex items-center cursor-pointer text-sm font-medium text-[#FF004F] hover:underline hover-apply-child"
+            >
+              <span>Explore More</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="#ffffff"
+              >
+                <path
+                  d="M1.66668 9.66779H16.3217L11.9108 5.25696C11.8313 5.18009 11.7678 5.08813 11.7241 4.98646C11.6804 4.88479 11.6574 4.77544 11.6565 4.66479C11.6555 4.55414 11.6766 4.44441 11.7185 4.342C11.7604 4.23958 11.8223 4.14654 11.9005 4.0683C11.9788 3.99005 12.0718 3.92817 12.1742 3.88627C12.2766 3.84437 12.3864 3.82329 12.497 3.82425C12.6077 3.82521 12.717 3.8482 12.8187 3.89187C12.9204 3.93555 13.0123 3.99903 13.0892 4.07863L18.9225 9.91196C19.0787 10.0682 19.1665 10.2802 19.1665 10.5011C19.1665 10.7221 19.0787 10.934 18.9225 11.0903L13.0892 16.9236C12.932 17.0754 12.7215 17.1594 12.503 17.1575C12.2845 17.1556 12.0755 17.068 11.921 16.9135C11.7665 16.759 11.6789 16.55 11.677 16.3315C11.6751 16.113 11.759 15.9025 11.9108 15.7453L16.3217 11.3345H1.66668C1.44567 11.3345 1.23371 11.2467 1.07743 11.0904C0.921144 10.9341 0.833347 10.7221 0.833347 10.5011C0.833347 10.2801 0.921144 10.0682 1.07743 9.91187C1.23371 9.75559 1.44567 9.66779 1.66668 9.66779Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div
+            class="card-partner p-6 flex flex-col justify-between"
+            data-category="product-reviews"
+          >
+            <div class="flex flex-col">
+              <div class="flex items-center mb-5 justify-between">
+                <div
+                  class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
+                >
+                  <img
+                    src="https://beta.onemobile.ai/wp-content/uploads/2024/03/Frame-1000009348.png"
+                    alt="Kudosi (formerly Ali Reviews)"
+                    class="w-8 h-8"
+                  />
+                </div>
+              </div>
+              <div class="mb-2">
+                <h3 class="text-xl font-semibold text-white">Kudosi (formerly Ali Reviews)</h3>
+              </div>
+              <p class="text-[#B7BBC2] text-base mb-[18px] line-clamp-2">
+                Collect free reviews, automatically send emails, offer discounts.
+              </p>
+            </div>
+            <a
+              href="https://shopify.pxf.io/nLQo0V"
+              target="_blank"
+              class="flex items-center cursor-pointer text-sm font-medium text-[#FF004F] hover:underline hover-apply-child"
+            >
+              <span>Explore More</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="#ffffff"
+              >
+                <path
+                  d="M1.66668 9.66779H16.3217L11.9108 5.25696C11.8313 5.18009 11.7678 5.08813 11.7241 4.98646C11.6804 4.88479 11.6574 4.77544 11.6565 4.66479C11.6555 4.55414 11.6766 4.44441 11.7185 4.342C11.7604 4.23958 11.8223 4.14654 11.9005 4.0683C11.9788 3.99005 12.0718 3.92817 12.1742 3.88627C12.2766 3.84437 12.3864 3.82329 12.497 3.82425C12.6077 3.82521 12.717 3.8482 12.8187 3.89187C12.9204 3.93555 13.0123 3.99903 13.0892 4.07863L18.9225 9.91196C19.0787 10.0682 19.1665 10.2802 19.1665 10.5011C19.1665 10.7221 19.0787 10.934 18.9225 11.0903L13.0892 16.9236C12.932 17.0754 12.7215 17.1594 12.503 17.1575C12.2845 17.1556 12.0755 17.068 11.921 16.9135C11.7665 16.759 11.6789 16.55 11.677 16.3315C11.6751 16.113 11.759 15.9025 11.9108 15.7453L16.3217 11.3345H1.66668C1.44567 11.3345 1.23371 11.2467 1.07743 11.0904C0.921144 10.9341 0.833347 10.7221 0.833347 10.5011C0.833347 10.2801 0.921144 10.0682 1.07743 9.91187C1.23371 9.75559 1.44567 9.66779 1.66668 9.66779Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div
+            class="card-partner p-6 flex flex-col justify-between"
+            data-category="product-reviews"
+          >
+            <div class="flex flex-col">
+              <div class="flex items-center mb-5 justify-between">
+                <div
+                  class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
+                >
+                  <img
+                    src="https://beta.onemobile.ai/wp-content/uploads/2024/03/CJmAj_a-5fQCEAE-1.png"
+                    alt="Judge.me"
+                    class="w-8 h-8"
+                  />
+                </div>
+              </div>
+              <div class="mb-2">
+                <h3 class="text-xl font-semibold text-white">Judge.me</h3>
+              </div>
+              <p class="text-[#B7BBC2] text-base mb-[18px] line-clamp-2">
+                Review app, including in-email review forms, pictures, and more.
+              </p>
+            </div>
+            <a
+              href="https://shopify.pxf.io/R59mvX"
+              target="_blank"
+              class="flex items-center cursor-pointer text-sm font-medium text-[#FF004F] hover:underline hover-apply-child"
+            >
+              <span>Explore More</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="#ffffff"
+              >
+                <path
+                  d="M1.66668 9.66779H16.3217L11.9108 5.25696C11.8313 5.18009 11.7678 5.08813 11.7241 4.98646C11.6804 4.88479 11.6574 4.77544 11.6565 4.66479C11.6555 4.55414 11.6766 4.44441 11.7185 4.342C11.7604 4.23958 11.8223 4.14654 11.9005 4.0683C11.9788 3.99005 12.0718 3.92817 12.1742 3.88627C12.2766 3.84437 12.3864 3.82329 12.497 3.82425C12.6077 3.82521 12.717 3.8482 12.8187 3.89187C12.9204 3.93555 13.0123 3.99903 13.0892 4.07863L18.9225 9.91196C19.0787 10.0682 19.1665 10.2802 19.1665 10.5011C19.1665 10.7221 19.0787 10.934 18.9225 11.0903L13.0892 16.9236C12.932 17.0754 12.7215 17.1594 12.503 17.1575C12.2845 17.1556 12.0755 17.068 11.921 16.9135C11.7665 16.759 11.6789 16.55 11.677 16.3315C11.6751 16.113 11.759 15.9025 11.9108 15.7453L16.3217 11.3345H1.66668C1.44567 11.3345 1.23371 11.2467 1.07743 11.0904C0.921144 10.9341 0.833347 10.7221 0.833347 10.5011C0.833347 10.2801 0.921144 10.0682 1.07743 9.91187C1.23371 9.75559 1.44567 9.66779 1.66668 9.66779Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div
+            class="card-partner p-6 flex flex-col justify-between"
+            data-category="product-reviews"
+          >
+            <div class="flex flex-col">
+              <div class="flex items-center mb-5 justify-between">
+                <div
+                  class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
+                >
+                  <img
+                    src="https://beta.onemobile.ai/wp-content/uploads/2024/03/image-91.png"
+                    alt="Fera Product Reviews App"
+                    class="w-8 h-8"
+                  />
+                </div>
+              </div>
+              <div class="mb-2">
+                <h3 class="text-xl font-semibold text-white">Fera Product Reviews App</h3>
+              </div>
+              <p class="text-[#B7BBC2] text-base mb-[18px] line-clamp-2">
+                Customizable product reviews photo reviews &amp; video reviews.
+              </p>
+            </div>
+            <a
+              href="https://shopify.pxf.io/4PNoQ0"
+              target="_blank"
+              class="flex items-center cursor-pointer text-sm font-medium text-[#FF004F] hover:underline hover-apply-child"
+            >
+              <span>Explore More</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="#ffffff"
+              >
+                <path
+                  d="M1.66668 9.66779H16.3217L11.9108 5.25696C11.8313 5.18009 11.7678 5.08813 11.7241 4.98646C11.6804 4.88479 11.6574 4.77544 11.6565 4.66479C11.6555 4.55414 11.6766 4.44441 11.7185 4.342C11.7604 4.23958 11.8223 4.14654 11.9005 4.0683C11.9788 3.99005 12.0718 3.92817 12.1742 3.88627C12.2766 3.84437 12.3864 3.82329 12.497 3.82425C12.6077 3.82521 12.717 3.8482 12.8187 3.89187C12.9204 3.93555 13.0123 3.99903 13.0892 4.07863L18.9225 9.91196C19.0787 10.0682 19.1665 10.2802 19.1665 10.5011C19.1665 10.7221 19.0787 10.934 18.9225 11.0903L13.0892 16.9236C12.932 17.0754 12.7215 17.1594 12.503 17.1575C12.2845 17.1556 12.0755 17.068 11.921 16.9135C11.7665 16.759 11.6789 16.55 11.677 16.3315C11.6751 16.113 11.759 15.9025 11.9108 15.7453L16.3217 11.3345H1.66668C1.44567 11.3345 1.23371 11.2467 1.07743 11.0904C0.921144 10.9341 0.833347 10.7221 0.833347 10.5011C0.833347 10.2801 0.921144 10.0682 1.07743 9.91187C1.23371 9.75559 1.44567 9.66779 1.66668 9.66779Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div
+            class="card-partner p-6 flex flex-col justify-between"
+            data-category="search-navigation-and-filters"
+          >
+            <div class="flex flex-col">
+              <div class="flex items-center mb-5 justify-between">
+                <div
+                  class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
+                >
+                  <img
+                    src="https://beta.onemobile.ai/wp-content/uploads/2024/03/CPTl8uCS3v0CEAE-1.png"
+                    alt="Searchanise"
+                    class="w-8 h-8"
+                  />
+                </div>
+              </div>
+              <div class="mb-2">
+                <h3 class="text-xl font-semibold text-white">Searchanise</h3>
+              </div>
+              <p class="text-[#B7BBC2] text-base mb-[18px] line-clamp-2">
+                Boost sales with autocomplete, smart search, and product filters.
+              </p>
+            </div>
+            <a
+              href="https://shopify.pxf.io/Y9aBQe"
+              target="_blank"
+              class="flex items-center cursor-pointer text-sm font-medium text-[#FF004F] hover:underline hover-apply-child"
+            >
+              <span>Explore More</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="#ffffff"
+              >
+                <path
+                  d="M1.66668 9.66779H16.3217L11.9108 5.25696C11.8313 5.18009 11.7678 5.08813 11.7241 4.98646C11.6804 4.88479 11.6574 4.77544 11.6565 4.66479C11.6555 4.55414 11.6766 4.44441 11.7185 4.342C11.7604 4.23958 11.8223 4.14654 11.9005 4.0683C11.9788 3.99005 12.0718 3.92817 12.1742 3.88627C12.2766 3.84437 12.3864 3.82329 12.497 3.82425C12.6077 3.82521 12.717 3.8482 12.8187 3.89187C12.9204 3.93555 13.0123 3.99903 13.0892 4.07863L18.9225 9.91196C19.0787 10.0682 19.1665 10.2802 19.1665 10.5011C19.1665 10.7221 19.0787 10.934 18.9225 11.0903L13.0892 16.9236C12.932 17.0754 12.7215 17.1594 12.503 17.1575C12.2845 17.1556 12.0755 17.068 11.921 16.9135C11.7665 16.759 11.6789 16.55 11.677 16.3315C11.6751 16.113 11.759 15.9025 11.9108 15.7453L16.3217 11.3345H1.66668C1.44567 11.3345 1.23371 11.2467 1.07743 11.0904C0.921144 10.9341 0.833347 10.7221 0.833347 10.5011C0.833347 10.2801 0.921144 10.0682 1.07743 9.91187C1.23371 9.75559 1.44567 9.66779 1.66668 9.66779Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div
+            class="card-partner p-6 flex flex-col justify-between"
+            data-category="product-reviews"
+          >
+            <div class="flex flex-col">
+              <div class="flex items-center mb-5 justify-between">
+                <div
+                  class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
+                >
+                  <img
+                    src="https://beta.onemobile.ai/wp-content/uploads/2024/03/1699934959CIS2jICqov8CEAE-1.png"
+                    alt="Opinew Product Reviews App UGC"
+                    class="w-8 h-8"
+                  />
+                </div>
+              </div>
+              <div class="mb-2">
+                <h3 class="text-xl font-semibold text-white">Opinew Product Reviews App UGC</h3>
+              </div>
+              <p class="text-[#B7BBC2] text-base mb-[18px] line-clamp-2">
+                Import reviews, request reviews and display reviews. All-in-1 review app with
+                advanced automation.
+              </p>
+            </div>
+            <a
+              href="https://shopify.pxf.io/75NojY"
+              target="_blank"
+              class="flex items-center cursor-pointer text-sm font-medium text-[#FF004F] hover:underline hover-apply-child"
+            >
+              <span>Explore More</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="#ffffff"
+              >
+                <path
+                  d="M1.66668 9.66779H16.3217L11.9108 5.25696C11.8313 5.18009 11.7678 5.08813 11.7241 4.98646C11.6804 4.88479 11.6574 4.77544 11.6565 4.66479C11.6555 4.55414 11.6766 4.44441 11.7185 4.342C11.7604 4.23958 11.8223 4.14654 11.9005 4.0683C11.9788 3.99005 12.0718 3.92817 12.1742 3.88627C12.2766 3.84437 12.3864 3.82329 12.497 3.82425C12.6077 3.82521 12.717 3.8482 12.8187 3.89187C12.9204 3.93555 13.0123 3.99903 13.0892 4.07863L18.9225 9.91196C19.0787 10.0682 19.1665 10.2802 19.1665 10.5011C19.1665 10.7221 19.0787 10.934 18.9225 11.0903L13.0892 16.9236C12.932 17.0754 12.7215 17.1594 12.503 17.1575C12.2845 17.1556 12.0755 17.068 11.921 16.9135C11.7665 16.759 11.6789 16.55 11.677 16.3315C11.6751 16.113 11.759 15.9025 11.9108 15.7453L16.3217 11.3345H1.66668C1.44567 11.3345 1.23371 11.2467 1.07743 11.0904C0.921144 10.9341 0.833347 10.7221 0.833347 10.5011C0.833347 10.2801 0.921144 10.0682 1.07743 9.91187C1.23371 9.75559 1.44567 9.66779 1.66668 9.66779Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div
+            class="card-partner p-6 flex flex-col justify-between"
+            data-category="customer-analytics"
+          >
+            <div class="flex flex-col">
+              <div class="flex items-center mb-5 justify-between">
+                <div
+                  class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
+                >
+                  <img
+                    src="https://beta.onemobile.ai/wp-content/uploads/2024/03/1699950642Mixpanel-1.png"
+                    alt="Mixpanel"
+                    class="w-8 h-8"
+                  />
+                </div>
+              </div>
+              <div class="mb-2">
+                <h3 class="text-xl font-semibold text-white">Mixpanel</h3>
+              </div>
+              <p class="text-[#B7BBC2] text-base mb-[18px] line-clamp-2">
+                Track events such as clicks, sign-ups, purchases, and more.
+              </p>
+            </div>
+            <a
+              href="https://shopify.pxf.io/zNVrAW"
+              target="_blank"
+              class="flex items-center cursor-pointer text-sm font-medium text-[#FF004F] hover:underline hover-apply-child"
+            >
+              <span>Explore More</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="#ffffff"
+              >
+                <path
+                  d="M1.66668 9.66779H16.3217L11.9108 5.25696C11.8313 5.18009 11.7678 5.08813 11.7241 4.98646C11.6804 4.88479 11.6574 4.77544 11.6565 4.66479C11.6555 4.55414 11.6766 4.44441 11.7185 4.342C11.7604 4.23958 11.8223 4.14654 11.9005 4.0683C11.9788 3.99005 12.0718 3.92817 12.1742 3.88627C12.2766 3.84437 12.3864 3.82329 12.497 3.82425C12.6077 3.82521 12.717 3.8482 12.8187 3.89187C12.9204 3.93555 13.0123 3.99903 13.0892 4.07863L18.9225 9.91196C19.0787 10.0682 19.1665 10.2802 19.1665 10.5011C19.1665 10.7221 19.0787 10.934 18.9225 11.0903L13.0892 16.9236C12.932 17.0754 12.7215 17.1594 12.503 17.1575C12.2845 17.1556 12.0755 17.068 11.921 16.9135C11.7665 16.759 11.6789 16.55 11.677 16.3315C11.6751 16.113 11.759 15.9025 11.9108 15.7453L16.3217 11.3345H1.66668C1.44567 11.3345 1.23371 11.2467 1.07743 11.0904C0.921144 10.9341 0.833347 10.7221 0.833347 10.5011C0.833347 10.2801 0.921144 10.0682 1.07743 9.91187C1.23371 9.75559 1.44567 9.66779 1.66668 9.66779Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="card-partner p-6 flex flex-col justify-between" data-category="others">
+            <div class="flex flex-col">
+              <div class="flex items-center mb-5 justify-between">
+                <div
+                  class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
+                >
+                  <img
+                    src="https://beta.onemobile.ai/wp-content/uploads/2024/03/image-94.png"
+                    alt="Zipprover ‑ ZIPCode Validator"
+                    class="w-8 h-8"
+                  />
+                </div>
+              </div>
+              <div class="mb-2">
+                <h3 class="text-xl font-semibold text-white">Zipprover ‑ ZIPCode Validator</h3>
+              </div>
+              <p class="text-[#B7BBC2] text-base mb-[18px] line-clamp-2">
+                A zipcode validator app that helps customers check whether their location is
+                serviceable
+              </p>
+            </div>
+            <a
+              href="https://shopify.pxf.io/DKNnX5"
+              target="_blank"
+              class="flex items-center cursor-pointer text-sm font-medium text-[#FF004F] hover:underline hover-apply-child"
+            >
+              <span>Explore More</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="#ffffff"
+              >
+                <path
+                  d="M1.66668 9.66779H16.3217L11.9108 5.25696C11.8313 5.18009 11.7678 5.08813 11.7241 4.98646C11.6804 4.88479 11.6574 4.77544 11.6565 4.66479C11.6555 4.55414 11.6766 4.44441 11.7185 4.342C11.7604 4.23958 11.8223 4.14654 11.9005 4.0683C11.9788 3.99005 12.0718 3.92817 12.1742 3.88627C12.2766 3.84437 12.3864 3.82329 12.497 3.82425C12.6077 3.82521 12.717 3.8482 12.8187 3.89187C12.9204 3.93555 13.0123 3.99903 13.0892 4.07863L18.9225 9.91196C19.0787 10.0682 19.1665 10.2802 19.1665 10.5011C19.1665 10.7221 19.0787 10.934 18.9225 11.0903L13.0892 16.9236C12.932 17.0754 12.7215 17.1594 12.503 17.1575C12.2845 17.1556 12.0755 17.068 11.921 16.9135C11.7665 16.759 11.6789 16.55 11.677 16.3315C11.6751 16.113 11.759 15.9025 11.9108 15.7453L16.3217 11.3345H1.66668C1.44567 11.3345 1.23371 11.2467 1.07743 11.0904C0.921144 10.9341 0.833347 10.7221 0.833347 10.5011C0.833347 10.2801 0.921144 10.0682 1.07743 9.91187C1.23371 9.75559 1.44567 9.66779 1.66668 9.66779Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="card-partner p-6 flex flex-col justify-between" data-category="others">
+            <div class="flex flex-col">
+              <div class="flex items-center mb-5 justify-between">
+                <div
+                  class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
+                >
+                  <img
+                    src="https://beta.onemobile.ai/wp-content/uploads/2024/03/image-95.png"
+                    alt="Easy Appointment Booking"
+                    class="w-8 h-8"
+                  />
+                </div>
+              </div>
+              <div class="mb-2">
+                <h3 class="text-xl font-semibold text-white">Easy Appointment Booking</h3>
+              </div>
+              <p class="text-[#B7BBC2] text-base mb-[18px] line-clamp-2">
+                Take appointments, bookings, services, events on your calendar. Save time and grow
+                revenue with ease
+              </p>
+            </div>
+            <a
+              href="https://shopify.pxf.io/k0qZn0"
+              target="_blank"
+              class="flex items-center cursor-pointer text-sm font-medium text-[#FF004F] hover:underline hover-apply-child"
+            >
+              <span>Explore More</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="#ffffff"
+              >
+                <path
+                  d="M1.66668 9.66779H16.3217L11.9108 5.25696C11.8313 5.18009 11.7678 5.08813 11.7241 4.98646C11.6804 4.88479 11.6574 4.77544 11.6565 4.66479C11.6555 4.55414 11.6766 4.44441 11.7185 4.342C11.7604 4.23958 11.8223 4.14654 11.9005 4.0683C11.9788 3.99005 12.0718 3.92817 12.1742 3.88627C12.2766 3.84437 12.3864 3.82329 12.497 3.82425C12.6077 3.82521 12.717 3.8482 12.8187 3.89187C12.9204 3.93555 13.0123 3.99903 13.0892 4.07863L18.9225 9.91196C19.0787 10.0682 19.1665 10.2802 19.1665 10.5011C19.1665 10.7221 19.0787 10.934 18.9225 11.0903L13.0892 16.9236C12.932 17.0754 12.7215 17.1594 12.503 17.1575C12.2845 17.1556 12.0755 17.068 11.921 16.9135C11.7665 16.759 11.6789 16.55 11.677 16.3315C11.6751 16.113 11.759 15.9025 11.9108 15.7453L16.3217 11.3345H1.66668C1.44567 11.3345 1.23371 11.2467 1.07743 11.0904C0.921144 10.9341 0.833347 10.7221 0.833347 10.5011C0.833347 10.2801 0.921144 10.0682 1.07743 9.91187C1.23371 9.75559 1.44567 9.66779 1.66668 9.66779Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div
+            class="card-partner p-6 flex flex-col justify-between"
+            data-category="product-reviews"
+          >
+            <div class="flex flex-col">
+              <div class="flex items-center mb-5 justify-between">
+                <div
+                  class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
+                >
+                  <img
+                    src="https://beta.onemobile.ai/wp-content/uploads/2024/04/image-96.png"
+                    alt="Growave"
+                    class="w-8 h-8"
+                  />
+                </div>
+              </div>
+              <div class="mb-2">
+                <h3 class="text-xl font-semibold text-white">Growave</h3>
+              </div>
+              <p class="text-[#B7BBC2] text-base mb-[18px] line-clamp-2">
+                Increase repeat purchases and engagement while optimizing the budget and site
+                performance with fewer apps.
+              </p>
+            </div>
+            <a
+              href="https://shopify.pxf.io/LXN4v0"
+              target="_blank"
+              class="flex items-center cursor-pointer text-sm font-medium text-[#FF004F] hover:underline hover-apply-child"
+            >
+              <span>Explore More</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="#ffffff"
+              >
+                <path
+                  d="M1.66668 9.66779H16.3217L11.9108 5.25696C11.8313 5.18009 11.7678 5.08813 11.7241 4.98646C11.6804 4.88479 11.6574 4.77544 11.6565 4.66479C11.6555 4.55414 11.6766 4.44441 11.7185 4.342C11.7604 4.23958 11.8223 4.14654 11.9005 4.0683C11.9788 3.99005 12.0718 3.92817 12.1742 3.88627C12.2766 3.84437 12.3864 3.82329 12.497 3.82425C12.6077 3.82521 12.717 3.8482 12.8187 3.89187C12.9204 3.93555 13.0123 3.99903 13.0892 4.07863L18.9225 9.91196C19.0787 10.0682 19.1665 10.2802 19.1665 10.5011C19.1665 10.7221 19.0787 10.934 18.9225 11.0903L13.0892 16.9236C12.932 17.0754 12.7215 17.1594 12.503 17.1575C12.2845 17.1556 12.0755 17.068 11.921 16.9135C11.7665 16.759 11.6789 16.55 11.677 16.3315C11.6751 16.113 11.759 15.9025 11.9108 15.7453L16.3217 11.3345H1.66668C1.44567 11.3345 1.23371 11.2467 1.07743 11.0904C0.921144 10.9341 0.833347 10.7221 0.833347 10.5011C0.833347 10.2801 0.921144 10.0682 1.07743 9.91187C1.23371 9.75559 1.44567 9.66779 1.66668 9.66779Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div
+            class="card-partner p-6 flex flex-col justify-between"
+            data-category="customer-analytics"
+          >
+            <div class="flex flex-col">
+              <div class="flex items-center mb-5 justify-between">
+                <div
+                  class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
+                >
+                  <img
+                    src="https://beta.onemobile.ai/wp-content/uploads/2024/03/tf92iwglugoosi0hpmqc-1.png"
+                    alt="UXCam"
+                    class="w-8 h-8"
+                  />
+                </div>
+              </div>
+              <div class="mb-2">
+                <h3 class="text-xl font-semibold text-white">UXCam</h3>
+              </div>
+              <p class="text-[#B7BBC2] text-base mb-[18px] line-clamp-2">
+                Know customer engagement, and identify pain points.
+              </p>
+            </div>
+            <a
+              href="https://www.shopify.com/admin/apps/onemobile/integrations"
+              target="_blank"
+              class="flex items-center cursor-pointer text-sm font-medium text-[#FF004F] hover:underline hover-apply-child"
+            >
+              <span>Request to Integrate</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="#ffffff"
+              >
+                <path
+                  d="M1.66668 9.66779H16.3217L11.9108 5.25696C11.8313 5.18009 11.7678 5.08813 11.7241 4.98646C11.6804 4.88479 11.6574 4.77544 11.6565 4.66479C11.6555 4.55414 11.6766 4.44441 11.7185 4.342C11.7604 4.23958 11.8223 4.14654 11.9005 4.0683C11.9788 3.99005 12.0718 3.92817 12.1742 3.88627C12.2766 3.84437 12.3864 3.82329 12.497 3.82425C12.6077 3.82521 12.717 3.8482 12.8187 3.89187C12.9204 3.93555 13.0123 3.99903 13.0892 4.07863L18.9225 9.91196C19.0787 10.0682 19.1665 10.2802 19.1665 10.5011C19.1665 10.7221 19.0787 10.934 18.9225 11.0903L13.0892 16.9236C12.932 17.0754 12.7215 17.1594 12.503 17.1575C12.2845 17.1556 12.0755 17.068 11.921 16.9135C11.7665 16.759 11.6789 16.55 11.677 16.3315C11.6751 16.113 11.759 15.9025 11.9108 15.7453L16.3217 11.3345H1.66668C1.44567 11.3345 1.23371 11.2467 1.07743 11.0904C0.921144 10.9341 0.833347 10.7221 0.833347 10.5011C0.833347 10.2801 0.921144 10.0682 1.07743 9.91187C1.23371 9.75559 1.44567 9.66779 1.66668 9.66779Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div
+            class="card-partner p-6 flex flex-col justify-between transition-all duration-300 ease-in-out"
+            data-category="loyalty-and-rewards"
+          >
+            <div class="flex flex-col">
+              <div class="flex items-center mb-5 justify-between">
+                <div
+                  class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
+                >
+                  <img
+                    src="https://beta.onemobile.ai/wp-content/uploads/2024/04/Logo_Black-1-40x40px.png"
+                    alt="OneLoyalty"
+                    class="w-8 h-8"
+                  />
+                </div>
+              </div>
+              <div class="mb-2">
+                <h3 class="text-xl font-semibold text-white">OneLoyalty</h3>
+              </div>
+              <p class="text-[#B7BBC2] text-base mb-[18px] line-clamp-2">
+                Easily run loyalty and referral programs that drive sales, customer retention rate
+                &amp; lifetime value.
+              </p>
+            </div>
+            <a
+              href="https://apps.shopify.com/oneloyalty"
+              target="_blank"
+              class="flex items-center cursor-pointer text-sm font-medium text-[#FF004F] hover:underline hover-apply-child"
+            >
+              <span>Explore More</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="#ffffff"
+              >
+                <path
+                  d="M1.66668 9.66779H16.3217L11.9108 5.25696C11.8313 5.18009 11.7678 5.08813 11.7241 4.98646C11.6804 4.88479 11.6574 4.77544 11.6565 4.66479C11.6555 4.55414 11.6766 4.44441 11.7185 4.342C11.7604 4.23958 11.8223 4.14654 11.9005 4.0683C11.9788 3.99005 12.0718 3.92817 12.1742 3.88627C12.2766 3.84437 12.3864 3.82329 12.497 3.82425C12.6077 3.82521 12.717 3.8482 12.8187 3.89187C12.9204 3.93555 13.0123 3.99903 13.0892 4.07863L18.9225 9.91196C19.0787 10.0682 19.1665 10.2802 19.1665 10.5011C19.1665 10.7221 19.0787 10.934 18.9225 11.0903L13.0892 16.9236C12.932 17.0754 12.7215 17.1594 12.503 17.1575C12.2845 17.1556 12.0755 17.068 11.921 16.9135C11.7665 16.759 11.6789 16.55 11.677 16.3315C11.6751 16.113 11.759 15.9025 11.9108 15.7453L16.3217 11.3345H1.66668C1.44567 11.3345 1.23371 11.2467 1.07743 11.0904C0.921144 10.9341 0.833347 10.7221 0.833347 10.5011C0.833347 10.2801 0.921144 10.0682 1.07743 9.91187C1.23371 9.75559 1.44567 9.66779 1.66668 9.66779Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div
+            class="card-partner p-6 flex flex-col justify-between transition-all duration-300 ease-in-out"
+            data-category="chat"
+          >
+            <div class="flex flex-col">
+              <div class="flex items-center mb-5 justify-between">
+                <div
+                  class="w-[41px] h-[41px] rounded-lg bg-white flex items-center justify-center mr-4"
+                >
+                  <img
+                    src="https://beta.onemobile.ai/wp-content/uploads/2024/03/629e1057974c5f2c1ceaa5f9-1.png"
+                    alt="Tidio Live Chat &amp; AI Chatbots"
+                    class="w-8 h-8"
+                  />
+                </div>
+              </div>
+              <div class="mb-2">
+                <h3 class="text-xl font-semibold text-white">Tidio Live Chat &amp; AI Chatbots</h3>
+              </div>
+              <p class="text-[#B7BBC2] text-base mb-[18px] line-clamp-2">
+                Answer questions, and guide through purchasing process.
+              </p>
+            </div>
+            <a
+              href="https://shopify.pxf.io/1rNRqD"
+              target="_blank"
+              class="flex items-center cursor-pointer text-sm font-medium text-[#FF004F] hover:underline hover-apply-child"
+            >
+              <span>Explore More</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="#ffffff"
+              >
+                <path
+                  d="M1.66668 9.66779H16.3217L11.9108 5.25696C11.8313 5.18009 11.7678 5.08813 11.7241 4.98646C11.6804 4.88479 11.6574 4.77544 11.6565 4.66479C11.6555 4.55414 11.6766 4.44441 11.7185 4.342C11.7604 4.23958 11.8223 4.14654 11.9005 4.0683C11.9788 3.99005 12.0718 3.92817 12.1742 3.88627C12.2766 3.84437 12.3864 3.82329 12.497 3.82425C12.6077 3.82521 12.717 3.8482 12.8187 3.89187C12.9204 3.93555 13.0123 3.99903 13.0892 4.07863L18.9225 9.91196C19.0787 10.0682 19.1665 10.2802 19.1665 10.5011C19.1665 10.7221 19.0787 10.934 18.9225 11.0903L13.0892 16.9236C12.932 17.0754 12.7215 17.1594 12.503 17.1575C12.2845 17.1556 12.0755 17.068 11.921 16.9135C11.7665 16.759 11.6789 16.55 11.677 16.3315C11.6751 16.113 11.759 15.9025 11.9108 15.7453L16.3217 11.3345H1.66668C1.44567 11.3345 1.23371 11.2467 1.07743 11.0904C0.921144 10.9341 0.833347 10.7221 0.833347 10.5011C0.833347 10.2801 0.921144 10.0682 1.07743 9.91187C1.23371 9.75559 1.44567 9.66779 1.66668 9.66779Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
           </div>
         </div>
       </section>
@@ -878,7 +1818,7 @@
 
     <section class="section mt-20 relative px-4 py-[70px] md:py-[124px] overflow-hidden">
       <div
-        class="section-cta__content animate__animated opacity-0 flex flex-col items-center gap-y-[25px]"
+        class="section-cta__content animate__animated opacity-0 flex flex-col items-center gap-y-[25px] relative z-10"
       >
         <div class="flex flex-col items-center gap-y-5 text-center">
           <p class="heading-gradient text-2xl sm:text-[50px]">Ready to get started?</p>
@@ -891,18 +1831,16 @@
         </div>
 
         <div
-          class="relative z-10 text-gradient py-1 px-4 bg-black rounded-[100px] border-[rgba(255,255,255,0.12)] border-[1.5px]"
+          class="text-gradient py-1 px-4 bg-black rounded-[100px] border-[rgba(255,255,255,0.12)] border-[1.5px]"
         >
           Free plan available
         </div>
-        <button
-          class="relative z-10 flex items-center gap-x-2 btn-primary h-[58px] md:h-[74px] text-sm sm:text-base font-normal leading-[160%]"
+        <a
+          class="flex items-center gap-x-2 btn-primary h-[58px] md:h-[74px] text-sm sm:text-base font-normal leading-[160%]"
+          href="https://apps.shopify.com/onemobile?utm_campaign=website&utm_term=bottom_cta&irclickid=0hNw8CzjxxycTCOySQz%3AHW0WUksTrAXeLSObx80&irgwc=1&partner=3198853&affpt=excluded&utm_channel=affiliates&utm_source=3198853-impact&utm_medium=cpa&iradid=1061744"
+          target="_blank"
         >
-          <a
-            href="https://apps.shopify.com/onemobile?utm_campaign=website&utm_term=bottom_cta&irclickid=0hNw8CzjxxycTCOySQz%3AHW0WUksTrAXeLSObx80&irgwc=1&partner=3198853&affpt=excluded&utm_channel=affiliates&utm_source=3198853-impact&utm_medium=cpa&iradid=1061744"
-            class="flex items-center gap-x-2 w-full h-full"
-            target="_blank"
-          >
+          <div class="flex items-center gap-x-2 w-full h-full">
             <p>Get 14 Days Free Trial</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -918,8 +1856,8 @@
                 fill="white"
               />
             </svg>
-          </a>
-        </button>
+          </div>
+        </a>
       </div>
 
       <div class="absolute bottom-0 -left-1/4 md:left-1/16 z-1">

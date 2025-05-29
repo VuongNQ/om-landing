@@ -1037,7 +1037,7 @@
 
     <section class="section mt-20 relative px-4 py-[70px] md:py-[124px] overflow-hidden">
       <div
-        class="section-cta__content animate__animated opacity-0 flex flex-col items-center gap-y-[25px]"
+        class="section-cta__content animate__animated opacity-0 flex flex-col items-center gap-y-[25px] relative z-10"
       >
         <div class="flex flex-col items-center gap-y-5 text-center">
           <p class="heading-gradient text-2xl sm:text-[50px]">Ready to get started?</p>
@@ -1050,18 +1050,16 @@
         </div>
 
         <div
-          class="relative z-10 text-gradient py-1 px-4 bg-black rounded-[100px] border-[rgba(255,255,255,0.12)] border-[1.5px]"
+          class="text-gradient py-1 px-4 bg-black rounded-[100px] border-[rgba(255,255,255,0.12)] border-[1.5px]"
         >
           Free plan available
         </div>
-        <button
-          class="relative z-10 flex items-center gap-x-2 btn-primary h-[58px] md:h-[74px] text-sm sm:text-base font-normal leading-[160%]"
+        <a
+          class="flex items-center gap-x-2 btn-primary h-[58px] md:h-[74px] text-sm sm:text-base font-normal leading-[160%]"
+          href="https://apps.shopify.com/onemobile?utm_campaign=website&utm_term=bottom_cta&irclickid=0hNw8CzjxxycTCOySQz%3AHW0WUksTrAXeLSObx80&irgwc=1&partner=3198853&affpt=excluded&utm_channel=affiliates&utm_source=3198853-impact&utm_medium=cpa&iradid=1061744"
+          target="_blank"
         >
-          <a
-            href="https://apps.shopify.com/onemobile?utm_campaign=website&utm_term=bottom_cta&irclickid=0hNw8CzjxxycTCOySQz%3AHW0WUksTrAXeLSObx80&irgwc=1&partner=3198853&affpt=excluded&utm_channel=affiliates&utm_source=3198853-impact&utm_medium=cpa&iradid=1061744"
-            class="flex items-center gap-x-2 w-full h-full"
-            target="_blank"
-          >
+          <div class="flex items-center gap-x-2 w-full h-full">
             <p>Get 14 Days Free Trial</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -1077,8 +1075,8 @@
                 fill="white"
               />
             </svg>
-          </a>
-        </button>
+          </div>
+        </a>
       </div>
 
       <div class="absolute bottom-0 -left-1/4 md:left-1/16 z-1">
